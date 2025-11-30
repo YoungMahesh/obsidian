@@ -9,6 +9,24 @@ git archive -o repository.zip HEAD
 # use `git bundle` to backing up entire repository with their history intact; but can just clone zip
 ```
 
+### gitignore
+
+```.gitignore
+### Ignore everything except specific files ###
+
+# Ignore everything
+*
+
+# But allow directories so Git can traverse into them
+!*/
+
+# Allow the specific directory tree
+!.gitignore
+!obsidian-git/
+!obsidian-git/data.json
+!quickadd/
+!quickadd/data.json
+```
 
 ---
 ### How to Set Up Directory-Specific Git User Emails
