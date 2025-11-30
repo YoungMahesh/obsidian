@@ -2,6 +2,7 @@
 ### update keymaps
 - Tools -> Preferences -> Interface -> Show setting (bottom-left) -> All -> left-menu search 
 	- -> Hotkeys settings -> search `jump` to modify video jump keymap
+	- h (medium-jump-left),   j (short-jump-left),   l (short-jump-right),    ; (medium-jump-right)
 
 ### stop storing history
 - Preferences -> Interface -> Show setting (bottom-left) -> All -> left-menu search -> 

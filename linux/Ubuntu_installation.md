@@ -5,9 +5,11 @@
 ```bash
 # flameshot (#screeshot), pass (password-store), i3 (i3wm manager), 
 # blueman (bluetooth manager), # pavucontrol (audio output management)
-sudo apt install flameshot pass i3 blueman pavucontrol
+sudo apt install flameshot pass i3 blueman pavucontrol curl
 ```
 
+### setup kitty
+setup kanata, kitty, nvim by referring to their config-files in dotfiles
 ### install from snap-store
 - [snap-store](https://snapcraft.io/store)
 - obsidian, telegram, chromium, brave, vlc, vscode

@@ -1,6 +1,45 @@
 #encryption 
 
-### gpg
+## concept
+
+### main key vs subkeys
+- flags
+	- sec (secret kye) = master key
+	- ssb (secret sub key) = sub keys
+
+In GPG(OpenPGP), subkeys are extra cryptographic keys attached to your main key that let you separate identity from daily usage. 
+
+- Main Key
+	- used to
+		- prove your identity
+		- create revoke subkeys
+	- should be kept offline (cold storage)
+	- rarely used
+- Subkeys
+	- used for everyday tasks like
+		- encrypting files
+		- signing commits
+		- authenticating to servers
+		
+You typically carry subkeys on your laptop or hardware key, not master key
+
+### Purpose of subkeys
+- better security
+	- If your laptop is hacked; attacker can steal subkeys; you can revoke or replace subkeys without losing identity
+- easier rotation
+	- expire subkeys regularly; replace compromised subkeys; keep same public identity forever
+- hardware support
+	- security devices like YubiKey can store only subkeys not master key
+
+### key flags
+- S - sign data (like git commits)
+- E - encrypt data
+- A - Authenticate (SSH login)
+- C - certify (master key only)
+
+
+## usage
+
 ```bash
 gpg --gen-key  # generate new key
 gpg --list-keys # list public-addresses of public-keys stored on machine 
@@ -59,5 +98,43 @@ Do you really want to set this key to ultimate trust? (y/N) y
 # After confirming, quit with:
 gpg> quit
 ```
+
+
+## errors
+
+### fix: encryption failed: Unusable public key
+- cause
+	1. subkey does not exist
+		`gpg --list-keys`
+	2. subkey is expired
+	3. subkey does not have enough trust
+```bash
+gpg --list-keys
+gpg --edit-key <KEY-ID>
+# Now, you are within the GPG interactive prompt
+
+# your primary key have multiple sub-keys
+# list all your sub-keys
+list
+
+# select key using 0-based indexing
+# select first key
+key 0
+# select second key
+key 1
+
+# then run:
+expire
+# select extention period by following prompted instructions
+
+# Save the changes by typing:
+save
+```
+
+
+
+
+---
+
 
 - GnuPG (GNU Privacy Gaurd) is a complete and free implementation of the OpenPGP standard defined by PGP
