@@ -103,35 +103,61 @@ gpg> quit
 ## errors
 
 ### fix: encryption failed: Unusable public key
-- cause
-	1. subkey does not exist
-		`gpg --list-keys`
-	2. subkey is expired
-	3. subkey does not have enough trust
 ```bash
+# go inside gpg-program and list keys
 gpg --list-keys
-gpg --edit-key <KEY-ID>
-# Now, you are within the GPG interactive prompt
+gpg --edit-key <gpg-master-key-address>
 
-# your primary key have multiple sub-keys
-# list all your sub-keys
-list
+gpg>list
+```
+#### cause 1: subkey does not exist
+
+#### cause 2. subkey is expired
+```bash
+gpg --edit-key <gpg-master-key-address>
+gpg>list
 
 # select key using 0-based indexing
 # select first key
-key 0
+gpg>key 0
 # select second key
-key 1
+gpg>key 1
 
 # then run:
-expire
+gpg>expire
 # select extention period by following prompted instructions
 
 # Save the changes by typing:
-save
+gpg>save
 ```
 
+#### cause 3. subkey does not have enough trust
+- Error: gpg: `<key-id>`: There is no assurance this key belongs to the named user
+```bash
+gpg --edit-key <gpg-master-key-address>
+gpg>list
 
+# select key using 0-based indexing, 1 = second-key
+gpg>key 1
+
+# open trust
+gpg>trust
+# you will see menu similar like this:
+# Please decide how far you trust this user to correctly verify other users' keys
+# (by looking at passports, checking fingerprints from different sources, etc.)
+# 
+#   1 = I don't know or won't say
+#   2 = I do NOT trust
+#   3 = I trust marginally
+#   4 = I trust fully
+#   5 = I trust ultimately
+#   m = back to the main menu
+# 
+# Your decision?
+gpg>5
+
+gpg>save
+```
 
 
 ---

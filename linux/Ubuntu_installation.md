@@ -5,7 +5,8 @@
 ```bash
 # flameshot (#screeshot), pass (password-store), i3 (i3wm manager), 
 # blueman (bluetooth manager), # pavucontrol (audio output management)
-sudo apt install flameshot pass i3 blueman pavucontrol curl
+# fzf (command line fuzzy-finder)
+sudo apt install flameshot pass i3 blueman pavucontrol curl fzf
 ```
 
 ### setup kitty
