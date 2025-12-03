@@ -9,15 +9,17 @@
 sudo apt install flameshot pass i3 blueman pavucontrol curl fzf
 ```
 
-### setup kitty
-setup kanata, kitty, nvim by referring to their config-files in dotfiles
+### install using scrips
+- setup kanata, kitty, nvim,  by referring to their config-files in dotfiles
+- restore backed up data of timewarrior, taskwarrior and setup backup
 ### install from snap-store
-- [snap-store](https://snapcraft.io/store)
 - obsidian, telegram, chromium, brave, vlc, vscode
 
-### pre-installed app-store
-- `#snap-store` (for snap packages) and `gnome-software` (for Debian, Snap, Flatpak packages)
+Pre-installed #app-store
+- [snap-store](https://snapcraft.io/store) (for snap packages) and `gnome-software` (for Debian, Snap, Flatpak packages)
 
+### gpg
+- create new sub-key for gpg, store only sub-key on computer, keep master-key offline
 
 ### check architecture
 - execute `uname -m`
@@ -28,7 +30,3 @@ setup kanata, kitty, nvim by referring to their config-files in dotfiles
 - format usb disk -> create partition on whole drive of type FAT 
 - use balena-etcher with gnome UI (do not use i3wm interface as it creates problem for sudo password input which leads to error)
 ---
-
-[[package-manager]]
-
-[[flameshot]]
