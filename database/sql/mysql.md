@@ -3,6 +3,8 @@
 
 - `select version()` query to get mysql-server version
 
+
+
 [[mysql_table]]
 
 [[mysql_contraints]]

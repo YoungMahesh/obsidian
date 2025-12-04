@@ -29,7 +29,5 @@
 - Better UI than neovim, vscode for markdown editing
 - notes can be published in graph-view using [digital-garden](https://github.com/oleeskild/obsidian-digital-garden) plugin
 
-
-
 ## Publish
 [[docs-quartz]]
