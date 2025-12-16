@@ -65,6 +65,13 @@ rclone purge --progress drive1:another   # delete file, folder and content insid
 rclone deletefile remote:path [flags]
 ```
 
+Set local path in configuration
+```conf
+[vid]
+type = alias
+remote = /home/mahesh/videos
+```
+
 ### rclone crypt
 1. Create new remote (11. Crypt) using 'rclone config' (e.g of name 'encrypted')
 2. Choose path (remote or local) of crypt while configuration
