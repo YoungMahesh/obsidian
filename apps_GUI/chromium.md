@@ -1,7 +1,7 @@
 #app/browser 
 ## extensions
+- [[youtube]]
 - [control panel for twitter](https://chromewebstore.google.com/detail/control-panel-for-twitter/kpmjjdhbcfebfjgdnpjagcndoelnidfj?hl=en&pli=1)
-- [unhook - Remove YouTube Recommended](https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid)
 - [excalisave](https://chromewebstore.google.com/detail/excalisave/obnjfbgikjcdfnbnmdamffacjfpankih)
 - [focustodo](https://chromewebstore.google.com/detail/focus-to-do-pomodoro-time/ngceodoilcgpmkijopinlkmohnfifjfb?hl=en) - disabled
 - [gnome-shell-extension](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en) - disabled
