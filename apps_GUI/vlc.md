@@ -4,6 +4,9 @@
 	- -> Hotkeys settings -> search `jump` to modify video jump keymap
 	- h (medium-jump-left),   j (short-jump-left),   l (short-jump-right),    ; (medium-jump-right)
 
+### manage speed
+- `]` increase speed
+- `[` decrease speed
 ### stop storing history
 - Preferences -> Interface -> Show setting (bottom-left) -> All -> left-menu search -> 
 	- Qt -> Uncheck "Save recently played items"
