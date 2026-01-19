@@ -3,7 +3,11 @@ sudo apt install autokey-gtk
 ```
 
 ### set phrase
-1. Open by executing `autokey-gtk` in i3wm
+1. Open in i3wm: 
+	- `autokey` to run in background
+		- You will see it's icon in bottom-bar of i3 when it is running
+		- To quit: right-click on icon -> click "Quit"
+	1. `autokey-gtk` to run in background + open app window
 2. Click New → Phrase
 3. Once phrase and phrase-settings are set, then click 'Save' on top-bar
 
