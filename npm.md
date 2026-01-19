@@ -16,6 +16,30 @@ npm -v          # check current version
 npm list -g --depth=0     # check globally installed packages on npm
 ```
 
+
+## working
+
+### `npx` vs `script-command`
+```bash
+# A. directly use npx in CLI
+# what happens:
+#   1. Uses local node_modules if present
+#   2. Otherwise downloads a temporary copy
+#   3. Does NOT rely on global installs
+npx dotenvx encrypt
+
+
+# B. create script in package.json and then execute that script
+#   e.g. step1: create in package.json: "scripts": { "encrypt": "dotenvx encrypt" } 
+#        step2: execute `npm run encrypt`
+# what happens: 
+#   1. Injects node_modules/.bin first
+#   2. Uses local package if present
+#   3. Falls back to global binary if local is missing
+npm run encrypt
+```
+
+
 ## npm update
 - How Updates Are Handled
 	- npm packages are defined as: `"react": "^18.3.1"`
