@@ -18,6 +18,14 @@ sudo apt install flameshot pass i3 blueman pavucontrol curl fzf
 Pre-installed #app-store
 - [snap-store](https://snapcraft.io/store) (for snap packages) and `gnome-software` (for Debian, Snap, Flatpak packages)
 
+
+### upgrade specific package
+
+**Debian**
+```bash
+sudo apt --only-upgrade install google-chrome-stable
+```
+
 ### gpg
 - create new sub-key for gpg, store only sub-key on computer, keep master-key offline
 
