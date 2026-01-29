@@ -11,7 +11,9 @@ transmission-cli [URL_or_PATH_of_torrent_file] -w ./ --exit
 transmission-show [URL_or_PATH_of_torrent_file]
 
 # stop background running after download completion
-pgrep transmission-cli  # get PID
+pgrep transmission-cli -f  # get PID
+# Try `pgrep -f' option to match against the complete command line.
+#   pgrep: pattern that searches for process name longer than 15 characters will result in zero matches
 kill <PID>
 kill -9 <PID> # forcefully kill the process
 ```
