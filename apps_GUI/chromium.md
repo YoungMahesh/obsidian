@@ -54,9 +54,12 @@ chromium --profile-directory="Default" --app="chrome-extension://ngceodoilcgpmki
 }
 ```
 ## Take screenshot
+#screenshot 
 1. open console `ctrl + shift + j`
 2. open command menu `ctrl + shift + p`
+	- if did not worked, Look at the top-right corner of the **Developer Tools panel** and click
 3. search `screenshot`
+4. select **Capture full size screenshot** if you want whole page (all scroll page)
 
 ## installation and config
 ### snap-store
