@@ -1,7 +1,3 @@
-.obsidian
-.obsidian.vimrc
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
 
-
-/.obsidian/plugins/obsidian-git/main.js
-/.obsidian/plugins/obsidian-git/styles.css
-/.obsidian/graph.json
