@@ -1,19 +1,15 @@
 #database/mysql 
 
-
 - `select version()` query to get mysql-server version
+### sql commands
 
+[[mysql_table]]  [[mysql_rows]]  [[mysql_columns]]
 
-
-[[mysql_table]]
-
+### concepts
 [[mysql_contraints]]
 
-[[mysql_rows]]
-
-[[mysql_columns]]
-
 [[mysql-statement_types]]
+### database setup
 
 [[mysql.docker-compose]]
 
