@@ -4,7 +4,7 @@
       "id": "280b2214-efbb-4d1a-be0f-0cc75c8bf1fb",
       "name": "zoom1",
       "type": "Macro",
-      "command": true,
+      "command": false,
       "runOnStartup": true,
       "macro": {
         "name": "zoom1",

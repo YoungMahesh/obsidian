@@ -10,5 +10,6 @@
   },
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
-  "defaultViewMode": "source"
+  "defaultViewMode": "source",
+  "attachmentFolderPath": "./"
 }
