@@ -6,11 +6,20 @@
 ## commands
 
 ### container 
-```bash
-## inspect container
-docker inspect <container-id>
-docker inspect <container-id> | grep project.working  # get docker-compose file which started the container
 
+#### inspect
+```bash
+# check the configuration of the container
+docker inspect <container-id> | <container-name>
+docker inspect <container-id> | grep project.working  # get docker-compose file which started the container
+```
+Inspect log
+- Config
+	- Labels
+		- com.docker.compose.project.config_files: path of compose-file which started the container 
+		- com.docker.compose.project.working_dir: directory of config-file
+
+```bash
 ## create container
 docker container run -d -p 4306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
 # here `mysql` is name of image, `db` will be the name of newly-created container
@@ -33,7 +42,6 @@ docker container start <container-id>
 docker container rm <container-id1> <container-id2> # remove stopped containers
 docker container rename curr_name new_name
 docker container stats  # check cpu and memory usage of all running containers
-docker container insepct <container-name>  # check the configuration of the container
 docker container logs <container-name>
 docker container top <container-name> # list processes running by the container
 ```

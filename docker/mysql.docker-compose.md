@@ -6,6 +6,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: <random-password>
     ports:
+		# 3307 (left-side) is port for consumer
       - 3307:3306
     volumes:
       - ./mysql1:/var/lib/mysql

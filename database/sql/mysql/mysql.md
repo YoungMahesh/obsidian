@@ -11,7 +11,7 @@
 [[mysql-statement_types]]
 ### database setup
 
-[[mysql.docker-compose]]
+[[mysql.docker-compose]]  [[phpmyadmin.docker-compose]]
 
 [[mysql_import]]
 
