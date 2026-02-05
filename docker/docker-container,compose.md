@@ -13,11 +13,25 @@
 docker inspect <container-id> | <container-name>
 docker inspect <container-id> | grep project.working  # get docker-compose file which started the container
 ```
-Inspect log
+Inspect output
 - Config
 	- Labels
 		- com.docker.compose.project.config_files: path of compose-file which started the container 
 		- com.docker.compose.project.working_dir: directory of config-file
+
+
+#### logs
+```bash
+# get last 20 lines of logs
+docker logs --tail 20 <container_name_or_id>
+# -f = real time logs
+docker logs --tail 20 -f <container_name_or_id>
+# -t = Include timestamps
+docker logs --tail 20 -t <container_name_or_id>
+
+# Docker doesn’t have a built-in “head” option for logs, but you can easily view the first 20 lines by piping the output to head
+docker logs <container_name_or_id> | head -n 20
+```
 
 ```bash
 ## create container
