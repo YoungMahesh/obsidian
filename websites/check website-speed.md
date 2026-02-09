@@ -1,0 +1,1 @@
+https://www.openstatus.dev/play/checker
