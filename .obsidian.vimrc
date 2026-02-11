@@ -19,6 +19,8 @@ vnoremap ' $
 " Move and insert at end of line
 nnoremap q A
 
+" select all
+nnoremap <C-a> 0ggvG$
 
 " Move up half of viewport + cursor at middle (zz)
 nnoremap a <C-u>zz
