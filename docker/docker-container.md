@@ -1,13 +1,6 @@
-
 [[docker-nodejs]]
-[[traefik.docker-compose]]
-[[mysql.docker-compose]]
-[[phpmyadmin.docker-compose]]
-## commands
 
-### container 
-
-#### inspect
+## inspect
 ```bash
 # check the configuration of the container
 docker inspect <container-id> | <container-name>
@@ -20,7 +13,7 @@ Inspect output
 		- com.docker.compose.project.working_dir: directory of config-file
 
 
-#### logs
+## logs
 ```bash
 # get last 20 lines of logs
 docker logs --tail 20 <container_name_or_id>
@@ -60,63 +53,3 @@ docker container logs <container-name>
 docker container top <container-name> # list processes running by the container
 ```
 
-### compose
-```bash
-### docker compose
-docker compose up -d  # start containers mentioned in docker-compose.yml
-docker compose logs 
-docker compose -f ./main.yml up -d  # start containers mentioned given <any>.yml file
-docker compose down # stop containers started through `up`
-docker compose pause
-docker compose unpause
-```
-
-## Examples
-
-```yml
-services:
-  service1:
-    container_name: xyz
-    # restart policy
-    # no: Never attempt to restart the container if it stops or crashes
-    # always: Always attempt to restart the container if it stops for any reason
-    # on-failure: Restart the container only if it stops with an error code (non-zero code)
-    # unless-stopped: Always restart the container unless it is manually stopped
-    restart: unless-stopped
-```
-
-### Example-dockerignore
-
-```dockerignore
-node_modules
-```
-### Example Docker-compose file
-```bash
-# docker-compose.yml
-
-version: "3.7"
-services:
-  currency-exchange:
-    image: in28min/currency-exchange:0.0.1-RELEASE
-    ports:
-      - "8000:8000"
-    restart: always
-    networks:
-      - currency-compose-network
-
-  currency-conversion:
-    image: in28min/currency-conversion:0.0.1-RELEASE
-    ports:
-      - "8100:8100"
-    restart: always
-    environment:
-      CURRENCY_EXCHANGE_SERVICE_HOST: http://currency-exchange
-    depends_on: # tells docker to start currency-exchange service first
-      - currency-exchange
-    networks:
-      - currency-compose-network
-
-# Networks to be created to facilitate communication between containers
-networks:
-  currency-compose-network:
-```

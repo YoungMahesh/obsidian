@@ -1,5 +1,6 @@
-[[docker-container,compose]]
 [[docker-image]]
+[[docker-compose]]
+[[docker-container]]
 ## commands
 ```bash
 #docker
