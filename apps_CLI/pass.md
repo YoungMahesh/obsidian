@@ -24,16 +24,22 @@ pass grep email   # search word `email` within file-content
 
 # lock pass content immediately by restarting gpg
 gpg-connect-agent reloadagent /bye
+```
 
-# ------------------------------- Initialize --------------------------------------------------
+### initialize
+```bash
 # create or import gpg keys: read `encryption.md` file
 gpg -k  # get gpg keys
 # pub   rsa3072 2023-09-11 [SC] [expires: 2025-09-10]
 #      525A4CCA5D86AE842D9A51C3DF39BF4C371A2ADD
 # rsa3072 - cryptography-algorithm-name
 # 525....ADD - gpg-public-key
-
 sudo apt install pass
+
+# set password-directory, to make this location permanent, add this command
+#   to ~/.bashrc
+# If you don’t set anything, pass uses: ~/.password-store
+export PASSWORD_STORE_DIR="$HOME/secure/password-store"
 
 # create new password-store
 pass init <gpg-public-key> # set/change gpg-key for password-store
@@ -43,10 +49,7 @@ cat ~/.password-store/.gpg-id  # view gpg-public-key used to encrypt passwords
 pass git init
 # OR use existing password-store
 git clone <pass-repository-url> ~/.password-store  # here we are cloning pass-repo in `.password-store`
-# `~/.password-store` is the default directory for `pass`
 ```
-
-
 
 ### multiple pass
 1. login to a different user account: `su -l <username>`
