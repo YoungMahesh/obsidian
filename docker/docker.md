@@ -28,6 +28,14 @@ docker network inspect <network-name>
 docker login -u <username>  # past Access-Token as password
 docker push youngmahesh/node1
 docker logout
+
+# stop docker
+# this is useful when you think some suspicious processes are running on your server and they are using some compromised docker container; 
+#   if stopping docker stop these processes (execute `htop` to view), then your hypothesis is correct
+systemctl stop docker docker.socket
+
+# start docker
+systemctl start docker
 ```
 
 ## Concepts

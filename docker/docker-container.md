@@ -34,7 +34,7 @@ docker logs --since 2026-02-12T05:00:00 -f <container>
 docker logs <container_name_or_id> | head -n 20
 ```
 
-## list, start, stop
+## list, start, stop, stats
 ```bash
 docker containr ls # list all running containers
 docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Image}}"
@@ -45,6 +45,15 @@ docker container rm <container-id1> <container-id2> # remove stopped containers
 docker container rename curr_name new_name
 docker container stats  # check cpu and memory usage of all running containers
 docker container top <container-name> # list processes running by the container
+
+# real-time view of all containers
+docker stats
+# stats of only specific containers
+docker stats container1 container2
+# One-shot output (no live refresh)
+docker stats --no-stream
+
+
 
 # interact with container file-system
 # CMD = ["bash"] on last line of Dockerfile to access image using bash
