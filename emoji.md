@@ -5,6 +5,10 @@
 ❌
 
 
+### numbers
+1️⃣   2️⃣   3️⃣  4️⃣ 
+
+
 ### Characters
 →
 ₹
