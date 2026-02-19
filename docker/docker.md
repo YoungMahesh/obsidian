@@ -16,12 +16,14 @@ docker system prune -h
 docker system prune
 
 ### docker volume
-docker volume create my-vol
 docker volume ls
+docker volume create my-vol
 docker volume inspect my-vol
 docker volume rm my-vol
 
 # docker-network
+docker network ls
+docker network create <network-name>
 docker network inspect <network-name>
 
 # dockerhub

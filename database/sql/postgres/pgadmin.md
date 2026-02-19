@@ -1,14 +1,11 @@
 #database/mysql 
 ### connect
-
-- use hostname(service-name)= (<docker-service-name> when on local) | (<ip-address> when on vps-server) in pgadmin connection form
+- use `hostname(service-name)= (<docker-service-name> when on local) | (<ip-address> when on vps-server)` in pgadmin connection form
 
 ### view data
-
-- Databases -> <database-name> -> Schemas -> public -> Tables -> <table-name> -> view/edit data (on right-click menu)
+- Databases: `<database-name> -> Schemas -> public -> Tables -> <table-name> -> view/edit data (on right-click menu)`
 
 ### backup database
-
 1. Right-click on the database you want to export
 2. Select "Backup" from the menu
 3. Under Data/Objects options, you can choose to export:

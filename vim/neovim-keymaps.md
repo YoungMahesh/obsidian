@@ -1,4 +1,4 @@
-#keyboard 
+#keyboard  #vim
 
 - keymap: currently active; original: replaced from nvim
 - mappings below are placed according to order in qwerty keyboard
