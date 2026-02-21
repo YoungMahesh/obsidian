@@ -55,6 +55,9 @@ Host company
    HostName <ip-address>
    User <username>
    IdentityFile ~/.ssh/workspace
+   # specify a timeout interval in seconds after which, if no data has been received from the server, the SSH client will send a "server alive" message (a null packet through the encrypted channel) to request a response
+   # default value is 0, which means these messages are not sent automatically, and the connection can drop if idle for too long.
+   ServerAliveInterval 60
    
 #--------------------------------------------------------------------------------------
 

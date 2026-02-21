@@ -11,11 +11,11 @@
 [[mysql-statement_types]]
 ### database setup
 
-[[mysql.docker-compose]]  [[phpmyadmin.docker-compose]]
+[[mysql.docker-compose]]  [[mysql_connection]]
 
-[[mysql_import]]
-
-[[mysql-backup]]
+ [[phpmyadmin.docker-compose]]
+ 
+[[mysql-backup]]  [[mysql_import]]
 
 [[mysql-configuration]]
 

@@ -1,6 +1,5 @@
-[[docker-image]]
-[[docker-compose]]
-[[docker-container]]
+[[docker-image]]   [[docker-compose]]  
+[[docker-container]]    [[docker_run]]
 ## commands
 ```bash
 #docker
@@ -20,11 +19,13 @@ docker volume ls
 docker volume create my-vol
 docker volume inspect my-vol
 docker volume rm my-vol
+# get location of volume on host: check "Mountpoint" in output of docker volume inspect
 
 # docker-network
 docker network ls
 docker network create <network-name>
 docker network inspect <network-name>
+#  under "Containers" section you will see list of containers on this network
 
 # dockerhub
 docker login -u <username>  # past Access-Token as password
