@@ -20,13 +20,17 @@ docker container logs <container-name>
 docker logs --tail 20 <container_name_or_id>
 # -f = follow (real time logs)
 docker logs --tail 20 -f <container_name_or_id>
-# live logs with timestamps
-docker logs -f --timestamps <container>
-# -t = Include timestamps
-docker logs --tail 20 -t <container_name_or_id>
+# show timestamps
+# you will see UTC timestamp for each log
+# get current UTC time in bash: date -u
+docker logs -t <container>
+# live logs 
+docker logs -f <container>
+# get tail logs --tail <number of lines>
+docker logs --tail 20 <container_name_or_id>
 
-
-# Shows logs from the last **10 minutes**
+# Shows logs from the last x time **10 minutes**
+# m = minutes; h = hours; 10m = 10 minutes
 docker logs --since 10m <container>
 docker logs --since 2026-02-12T05:00:00 -f <container>
 
