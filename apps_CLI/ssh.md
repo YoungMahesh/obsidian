@@ -74,6 +74,15 @@ ssh company
 ```
 
 
+### create tunnel between remote vps and local computer to host remote port on local computer
+```bash
+# after this command, if you get logged-in into vps then tunnel is estiblished
+# once you logout from ssh-connection this tunnel will be closed
+ssh -L 3310:localhost:3306 vps-user@vps-ip 
+# here, port on left side - 3310 is port on local-computer
+# port on right side - locahost:3306 is port on vps-server
+```
+
 ### move files
 ```bash
 # move file from vps to local

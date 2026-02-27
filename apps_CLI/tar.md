@@ -269,27 +269,4 @@ Because:
 
 If you're building a serious backup system on your VPS, I’d recommend rsync over tar incremental.
 
----
 
-# 🚀 When Should You Use tar Incremental?
-
-Good for:
-
-* Local backups
-* Simple cron backups
-* Archiving projects
-
-Not ideal for:
-
-* Large production infra
-* Complex restore scenarios
-
----
-
-If you want, I can now:
-
-* Design a **production-grade VPS backup strategy** for your Docker + MySQL setup
-* Show how to push incremental tar backups to GitHub Releases
-* Or explain how rsync incremental backups work (better approach for your case)
-
-What direction do you want to go?
