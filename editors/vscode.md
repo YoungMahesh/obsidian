@@ -3,6 +3,8 @@
 
 ### basic interaction
 
+[[editor-keymaps#vscode keymaps]]
+
 ```bash
 #------------------- Explorer/Files-section ---------------------------
 Cntr + E  # move to files/explorer-section
@@ -35,16 +37,3 @@ Cntr + P    # open command palette
 "javascript.validate.enable": false,
 ```
 
-### custom settings
-
-- Install extensions: `code --install-extension esbenp.prettier-vscode NomicFoundation.hardhat-solidity golang.Go`
-
-### custom keybindings
-
-- Update: `Cntr+shift+p -> Preferenes: Open Keyboard Shortcuts(JSON)` or `~/.config/Code/User/keybindings.json`
-- neovim
-  - install neovim as mentioned in [neovim](./neovim.md) file
-  - neovim-extension overrides system defaults, hence some system-defaults are also mentioned here to define priority
-  - Install neovim: `code --install-extension asvetliakov.vscode-neovim`
-- use vim_vscode_extension in github.dev as it does not support neovim_vscode_extension
-  - disable vimimum_chrome_extension on github.dev, as it creates keys conflict with vim_vscode_extension

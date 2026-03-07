@@ -11,6 +11,14 @@
 
 [[4.remote-repository]]
 
+### outside git repository
+
+```bash
+# compare differences between two files
+git diff first.json second.json
+```
+
+
 ### installation
 - [git-scm](https://git-scm.com/download/linux)
 

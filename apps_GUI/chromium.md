@@ -1,10 +1,15 @@
 #app/browser 
 ## extensions
+
+### regular extensions
 - [[youtube]]
 - [control panel for twitter](https://chromewebstore.google.com/detail/control-panel-for-twitter/kpmjjdhbcfebfjgdnpjagcndoelnidfj?hl=en&pli=1)
-- [excalisave](https://chromewebstore.google.com/detail/excalisave/obnjfbgikjcdfnbnmdamffacjfpankih)
-- [focustodo](https://chromewebstore.google.com/detail/focus-to-do-pomodoro-time/ngceodoilcgpmkijopinlkmohnfifjfb?hl=en) - disabled
-- [gnome-shell-extension](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en) - disabled
+
+### occasional extesions
+- [ColorPick Eyedropper](https://chromewebstore.google.com/detail/ohcpnigalekghcmgcdcenkpelffpdolg)
+- [Excalisave](https://chromewebstore.google.com/detail/excalisave/obnjfbgikjcdfnbnmdamffacjfpankih)
+- [focustodo](https://chromewebstore.google.com/detail/focus-to-do-pomodoro-time/ngceodoilcgpmkijopinlkmohnfifjfb?hl=en) 
+- [gnome-shell-extension](https://chromewebstore.google.com/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en) 
 
 ### launch extension from CLI
 - get extension id
