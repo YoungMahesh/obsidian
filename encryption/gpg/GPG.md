@@ -1,42 +1,5 @@
 #encryption 
 
-## concept
-
-### main key vs subkeys
-- flags
-	- sec (secret kye) = master key
-	- ssb (secret sub key) = sub keys
-
-In GPG(OpenPGP), subkeys are extra cryptographic keys attached to your main key that let you separate identity from daily usage. 
-
-- Main Key
-	- used to
-		- prove your identity
-		- create revoke subkeys
-	- should be kept offline (cold storage)
-	- rarely used
-- Subkeys
-	- used for everyday tasks like
-		- encrypting files
-		- signing commits
-		- authenticating to servers
-		
-You typically carry subkeys on your laptop or hardware key, not master key
-
-### Purpose of subkeys
-- better security
-	- If your laptop is hacked; attacker can steal subkeys; you can revoke or replace subkeys without losing identity
-- easier rotation
-	- expire subkeys regularly; replace compromised subkeys; keep same public identity forever
-- hardware support
-	- security devices like YubiKey can store only subkeys not master key
-
-### key flags
-- S - sign data (like git commits)
-- E - encrypt data
-- A - Authenticate (SSH login)
-- C - certify (master key only)
-
 
 ## usage
 
@@ -132,7 +95,7 @@ gpg>save
 ```
 
 #### cause 3. subkey does not have enough trust
-- Error: gpg: `<key-id>`: There is no assurance this key belongs to the named user
+- Error: gpg: `<key-id>`: There is no assurance this key belongs to the named user [[web-of-trust#Degrees of Trust]]
 ```bash
 gpg --edit-key <gpg-master-key-address>
 gpg>list
