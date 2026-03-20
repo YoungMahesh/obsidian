@@ -1,4 +1,4 @@
-#ubuntu/hardware 
+
 
 - headset vs handsfree
   - headset is better for microphone and speaker

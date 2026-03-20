@@ -1,4 +1,4 @@
-#database
+
 
 [[drizzle_select]]
 ## concepts
@@ -82,7 +82,7 @@ drop foreign key `user1_fk`;--> statement-breakpoint
 ```
 
 ### errors during migration
-#errors/drizzle
+
 #### syntax error near `/*`
 - drizzle-migration does not support block comments, use inline comments : two hyphens followed by a space (`-- `)
 

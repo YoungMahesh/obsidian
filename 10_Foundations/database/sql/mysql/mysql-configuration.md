@@ -1,4 +1,4 @@
-#database/mysql 
+
 
 **MySQL configuration** involves setting various parameters that control the behavior, performance, and security of the MySQL server. 
 These settings are typically defined in a configuration file, most commonly called `my.cnf` (on Linux/Unix) or `my.ini` (on Windows).

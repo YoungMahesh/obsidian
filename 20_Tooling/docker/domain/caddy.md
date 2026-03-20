@@ -1,6 +1,6 @@
-#domain 
 
-- [Install](https://caddyserver.com/docs/install#docker)
+
+- [Install](https://caddyserver.com/docs/install)
 
 ---
 

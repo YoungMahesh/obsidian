@@ -1,6 +1,6 @@
 # my ubuntu 24.04 setup
 
-- check #ubuntu version: `lsb_release -a`
+- check version: `lsb_release -a`
 
 ### ui modifications
 

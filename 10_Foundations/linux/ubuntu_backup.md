@@ -1,4 +1,4 @@
-#ubuntu/backup
+
 
 Backup these items before resetting ubuntu 
 - local databases, chrome-extensions with their config

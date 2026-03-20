@@ -1,4 +1,4 @@
-#database/postgres
+
 
 ```sql
 -- postgres have case insensitive sql query syntax (including column-names)

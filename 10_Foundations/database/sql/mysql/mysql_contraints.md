@@ -1,4 +1,4 @@
-#database/mysql 
+
 
 - In MySQL, constraints are rules enforced on data columns to ensure the accuracy, reliability, and integrity of the data in the database. They prevent invalid data from being entered into tables.
 - In MySQL, the maximum length for most identifiers—including database, table, column, and constraint names—is 64 characters.

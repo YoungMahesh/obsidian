@@ -3,7 +3,7 @@
 ## app installation
 ### install from apt
 ```bash
-# flameshot (#screeshot), pass (password-store), i3 (i3wm manager), 
+# flameshot (#screenshot), pass (password-store), i3 (i3wm manager), 
 # blueman (bluetooth manager), # pavucontrol (audio output management)
 # fzf (command line fuzzy-finder)
 sudo apt install flameshot pass i3 blueman pavucontrol curl fzf

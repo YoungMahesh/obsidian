@@ -1,4 +1,4 @@
-#less #cli/file-view
+ #cli/file-view
 
 ```bash
 # view large files

@@ -1,4 +1,4 @@
-#keyboard
+
 ### Redragon keyboard
 
 - `Fn + Alt` Change color theme

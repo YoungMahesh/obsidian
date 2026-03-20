@@ -1,5 +1,3 @@
-#auth
-
 - https://clerk.com/
 
 

@@ -1,4 +1,4 @@
-#database/mysql
+
 
 ### DML (Data Manipulation Language)
 - used to manipulate data stored in database tables

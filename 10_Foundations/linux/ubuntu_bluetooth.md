@@ -1,6 +1,3 @@
-#ubuntu/i3wm/bluetooth 
-
-
 ## switch audio profile
 To switch the audio profile for a connected Bluetooth device on Ubuntu (assuming you're using PipeWire or PulseAudio, which is standard), you can use the `pactl` command from the command line. This allows you to change profiles like A2DP (high-quality audio) or HSP (headset profile for calls).
 
@@ -112,7 +109,7 @@ man bluetoothctl
 
 ## Errors
 ### cannot turn on bluetooth on ubuntu  ?
-#errors/bluetooth
+
 
 ```bash
 # Try manually loading the Bluetooth modules again:

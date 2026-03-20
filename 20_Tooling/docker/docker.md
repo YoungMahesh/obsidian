@@ -2,7 +2,7 @@
 [[docker-container]]    [[docker_run]]
 ## commands
 ```bash
-#docker
+
 ### installation (https://docs.docker.com/engine/install/)
 docker version
 docker info
