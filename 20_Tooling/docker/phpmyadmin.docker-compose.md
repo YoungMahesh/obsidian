@@ -10,4 +10,8 @@ services:
       - PMA_PORT=3306  # port of database
       # - PMA_ARBITRARY=1 # allow user to connect arbitrary server by providing "Server" field during login
       - UPLOAD_LIMIT=100M # override the default value (2048KB), during import of .sql file
+
+	  # provide credentials for auto-login
+	  - PMA_USER=myuser
+	  - PMA_PASSWORD=mypass
 ```
