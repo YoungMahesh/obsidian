@@ -15,19 +15,35 @@ Flow:
 
 ![Image](https://mintlify.s3.us-west-1.amazonaws.com/auth0/docs/images/cdy7uua7fh8z/7mWk9No612EefC8uBidCqr/821eb60b0aa953b0d8e4afe897228844/Auth-code-flow-diagram.png)
 
-
+## 1. App registers with service provider
+- App registers Redirect URI and obtains `client_id` (and `client_secret` for confidential backend apps) with the service-provider's authorization server
+- For public clients (SPA, mobile), app prepares PKCE values: `code_verifier` and `code_challenge`
 
 ## 1. User asks app to link to a service
-- Suppose user needs to store some data from app to Google Drive, so he clicks 'Connect Google Drive'
+- User (in browser) clicks "Connect" in the app UI
+   - Suppose user needs to store some data from app to Google Drive (service-provider), so he clicks 'Connect Google Drive'
+- Browser → App (frontend): action to start OAuth flow.
+- App (frontend or backend) prepares an authorization request includeing:
+   - `response_type=code`
+   - `client_id=...`
+   - `redirect_uri=https://app.example.com/callback` - this value must match with registered redirect_uri on authorization server by app
+   - `scope=...`
+   - `state=RANDOM_STRING` for CSRF protection
+   - `code_challenge=HASH(code_verified)` if using PKCE
+
 ## 2. App redirects user to service's **Authorization Endpoint** on Authorization server
 
-- Your app redirects the user to the authorization server (e.g. Google)
+- Browser is redirected to the service-provider's authorization endpoint:
+   ```
+   GET /authorize?response_type=code&client_id=...&redirect_uri=...,etc
+   ```
 - The Login/Authorization page is hosted entirely by the service provider
-- In this Authorization Page, user can see access of which resources (scopes) he is giving to App, then he put his login-credentials in Authorization page and then approves **Authorization Request**
+- In this Authorization Page, User submit credentials and approves requested scopes (he sees scope on UI) 
 
 👉 This is called delegated authorization
 
 ### Scopes
+
 App includes **scopes** (permissions to access resources) in the Authorization request.
 You request scopes during login:
 ```
@@ -44,6 +60,15 @@ Scopes are attached: Authorization Code, Access Token, Refresh Token
 - Tokens **inherit scopes**, not choose them
 
 ## 3. After service's Authorization server gets approval from user, it sends **Authorization Code** to App's server
+
+- After user's approval on authorization page, Authorization server redirects the browser back to the app's redirect URI
+   - `https://app.example.com/callback?code=AUTH_CODE&state=RANDOM`
+- Browser forwards the authorization code to the app's backend
+   - Browser → App(frontend): receives the redirect and forwards the `code`
+   - App(frontend) → App(backend): `POST /callback` (or similar) with `code` and `state`
+   - App(backend) validates the `state` value to prevent CSRF
+
+
 ### Authorization code
 
 Authorization Code
@@ -105,6 +130,15 @@ hash(verifier) == code_challenge
 
 
 ## 4. App's server sends request to service's Authorization server with Authorization-code and get Access-Token and Refresh-Token in response
+
+- App(backend) → Service-provider's token endpoint: `POST /token` with:
+   - `grant_type=authorization_code`
+   - `code=AUTH_CODE`
+   - `redirect_uri=https://app.example.com/callback`
+   - `client_id=...`
+   - `client_secret=...` (for confidential clients) OR `code_verifier=...` (for PKCE)
+- This is a direct server-to-server call (no browser redirect)
+
 
 ### Why not directly return Access + Refresh Token instead of Authorization Code?
 

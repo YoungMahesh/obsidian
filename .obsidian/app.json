@@ -11,5 +11,6 @@
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "defaultViewMode": "source",
-  "attachmentFolderPath": "./"
+  "attachmentFolderPath": "./",
+  "readableLineLength": false
 }
