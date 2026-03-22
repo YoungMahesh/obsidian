@@ -138,6 +138,14 @@ hash(verifier) == code_challenge
    - `client_id=...`
    - `client_secret=...` (for confidential clients) OR `code_verifier=...` (for PKCE)
 - This is a direct server-to-server call (no browser redirect)
+- Service-provider's authorization server → App(backend): JSON {`access_token`: "...", `refresh_token`: "...", `expires_in`: N, `scope`: "..."}
+- App(backend): 
+   - stores `access_token` in memory/cache for short-term use
+   - stores `refresh_token` encrypted in database
+   - uses `Authorization: Bearer ACCESS_TOKEN` when calling the resource server on behalf of the user
+- When `access_token` expires:
+   - App(backend) → service-provider's token endpoint: POST /token with `grant_type=refresh_token`, `refresh_token=...`, `client_id` and `client_secret` (if required)
+   - Authorization server returns a new `access_token` (and sometimes a new `refresh_token`)
 
 
 ### Why not directly return Access + Refresh Token instead of Authorization Code?
