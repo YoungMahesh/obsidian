@@ -46,3 +46,9 @@ const PDFDownloadLink = dynamic(
 ### route handlers
 
 - Route handlers are functions that are executed when a user accesses a specific route on a website
+
+
+#errors 
+
+### next-server is consuming lot more RAM and CPU than expected
+- remove `.next` directory (worked for `next app router v16.1.6` on March-2026)

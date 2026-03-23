@@ -10,11 +10,11 @@
 	- ClerkAuth
 	- BetterAuth
 	- WorkOS
+- Make localhost https
+	- [LocalTunnel](https://www.npmjs.com/package/localtunnel)
 - Payments
 	- Web3 Wallet
 	- Stripe; [Stripe-Recommendations](https://github.com/t3dotgg/stripe-recommendations)
-	- [Polar](https://polar.sh/)
-	- [Autumn](https://useautumn.com/)
 - MonoRepo: TurboRepo
 - analytics
 	- [posthog](https://posthog.com/)
