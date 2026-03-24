@@ -11,7 +11,8 @@
 	- BetterAuth
 	- WorkOS
 - Make localhost https
-	- [LocalTunnel](https://www.npmjs.com/package/localtunnel)
+	- [LocalTunnel](https://www.npmjs.com/package/localtunnel) - not reliable, slow and fails most of the times
+	- [[cloudflare#publish localhost to public using cloudflare domain]]
 - Payments
 	- Web3 Wallet
 	- Stripe; [Stripe-Recommendations](https://github.com/t3dotgg/stripe-recommendations)
