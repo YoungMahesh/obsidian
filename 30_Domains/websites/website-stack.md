@@ -19,3 +19,5 @@
 - MonoRepo: TurboRepo
 - analytics
 	- [posthog](https://posthog.com/)
+- pdf generation
+	- [playwright](https://www.npmjs.com/package/playwright)
