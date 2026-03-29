@@ -70,7 +70,8 @@ s3cmd ls s3://<bucket-name>
 # don't forget slash '/' at end to list contents of directory
 s3cmd ls s3://<bucket-name>/<directory-name>/
 
-s3cmd ls s3://app1/ --recursive
+# -r == --recursive
+s3cmd ls s3://app1/ -r
 ```
 
 ### Copy Files

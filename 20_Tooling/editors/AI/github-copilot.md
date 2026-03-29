@@ -1,6 +1,9 @@
 #AI/model 
 
 ### pricing
+
+> Remember: If you cancel plan when new bill is pending while current plan is not expired, you loose all your remaining premium requests.
+
 - [Request allowances per plan](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans)
 - [Model Multipliers](https://docs.github.com/en/copilot/concepts/billing/copilot-requests#model-multipliers)
 
