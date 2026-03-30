@@ -7,6 +7,16 @@
 - [Request allowances per plan](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans)
 - [Model Multipliers](https://docs.github.com/en/copilot/concepts/billing/copilot-requests#model-multipliers)
 
+- with [$10/month pro plan](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans)
+	- unlimited GPT 5-mini requests
+	- [300 premium-requests quota](https://docs.github.com/en/copilot/concepts/billing/copilot-requests#model-multipliers)
+		- [review uncommitted changes](https://docs.github.com/en/copilot/concepts/code-review/code-review#code-review-monthly-quota)
+		- models to use
+			- claude haiku 4.5 - 1 call = 0.33 request
+			- claude_sonnet 4.6 - 1 = 1 request
+- click on 'Manage Models' under list of models in chat-box and you can use OpenRouter api key
+
+
 ### default instructions prompt
 - [reference](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions#asking-copilot-coding-agent-to-generate-a-githubcopilot-instructionsmd-file)
 

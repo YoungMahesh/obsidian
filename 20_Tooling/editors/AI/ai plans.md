@@ -1,9 +1,57 @@
 #AI/provider
 
-## [gemini cli](https://github.com/google-gemini/gemini-cli)
+## best plans
+1. Minimax token plan - $10/month
+	- not used yet
+2. Opencode Go - $10/month
+	- $60 worth of tokens per month for top chinese models
+3. github copilot
+	- claude models at affordable price
+4. OpenAI Go - $8/month 
+	- OpenAI codex - not used yet
+5. antigravity
+	- currently have quota limit issues
+--- 
+
+## [[github-copilot]]
+
+## MiniMax 
+- [$10 / month](https://platform.minimax.io/subscribe/token-plan)
+	- 1500 model requests of Minimax M2.7 / 5 hours
+	
+## Google
+### [gemini cli](https://github.com/google-gemini/gemini-cli)
 - free 1000 requests per day for gemini 2.5 pro
 	- can be used with kilo-code
 - stores credentials at: `~/.gemini`
+- Not using anymore, as I experienced slow responses
+### [gemini assist](https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist)
+- vscode extension
+- quota and speed is probably same as gemini_cli
+### antigravity
+- VSCode-fork by Google
+####  $20/month Google AI Pro pro plan:
+- currently, this plan is available for free for Jio customers in India (for specific plans)
+- Limited quota: 
+	- 5 hour quota get consumed within 2 hours
+	- many times, after first 5 hour quota, users need to wait for week to get next quota
+	- Model credits
+		- after limited quota is exhausted 'Model Credits ' can be used to continue use models
+		- 1000 Model Credits per month
+	- Check current quota
+		- Click "Antigravity-setting" in bottom-right → Settings → Advanced Settings → Models → Model Quota
+- Models available : 
+	- set 1: Gemini 3.1 Pro (High), Gemini 3.1 (Low)
+		- limited quota
+	- set 2: Claude  sonnet 4.6 (thinking), Claude Opus 4.6 (thinking)
+		- limited quota
+	- set 3: Gemini Flash 3
+		- almost unlimited quota
+
+## opencode
+- [with $10 go plan, you can use tokens of top models worth $60 tokens](https://opencode.ai/docs/go/#usage-limits)
+	- [some users claim that models are heavily quantised](https://www.reddit.com/r/opencodeCLI/comments/1s40z4p/opencode_go_plan_is_genuinely_the_worst_coding/)
+		- although, my experience was good with MiniMax m2.7 for nextjs app
 
 ## kilo code
 - pay only for what you use
@@ -22,18 +70,11 @@
 
 ## groq
 - free model requests: 14,400 request per day
+- can be used with opencode
 
 ## Windsurf
 - for limited time: unlimited swe-1 prompts
 - unlimited swe-1 lite
-
-## Github copilot
-- with [$10/month pro plan](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans)
-	- unlimited GPT 4.1 requests
-	- [300 request quota](https://docs.github.com/en/copilot/concepts/billing/copilot-requests#model-multipliers)
-		- [review uncommitted changes](https://docs.github.com/en/copilot/concepts/code-review/code-review#code-review-monthly-quota)
-		- use claude_sonnet models
-- click on 'Manage Models' under list of models in chat-box and you can use OpenRouter api key
 
 ## t3.chat
 - with $8/month you get 1500 queries from almost all top AI models
