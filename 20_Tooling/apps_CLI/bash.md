@@ -8,6 +8,13 @@ Cntr + f  # move cursor one letter forward
 Cntr + b  # move cursor one letter backward
 Cntr + p  # move to previous command in history
 Cntr + n  # move to next command in history
+
+Cntr + l  # clear screen
+Cntr + u  # clear typed text from cursor to the beginning of line
+Cntr + k  # clear typed text from cursor to the end of the line
+Cntr + w  # delete previous work (faster than <backspace> to delete text-block)
+Cntr + y  # paste back last deleted text (undo for cntr+w or cntr+u, etc)
+
 Alt + 1   # move to first tab
 Alt + 2   # move to second tab
 Cntr + Shift + t  # create new tab
