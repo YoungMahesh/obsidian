@@ -1,6 +1,5 @@
-### providers
-- [groq](groq.com)
-
+### context
+- [AGENTS.md file in project root](https://opencode.ai/docs/rules/)
 
 ### commands
 - ctrl+p = commands
