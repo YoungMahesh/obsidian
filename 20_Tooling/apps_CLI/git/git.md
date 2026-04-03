@@ -1,6 +1,8 @@
 #cli/file-manipulation 
 
 [[git_mental-model]] [[git-config]]
+
+[[git-worktree]]
 ### The main areas in Git
 
 [[1.working-directory]]
