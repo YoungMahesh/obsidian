@@ -11,7 +11,7 @@ CREATE DATABASE IF NOT EXISTS my_app_db;
 USE my_app_db;
 ```
 
-### check all tables in database
+### Check all tables in database
 
 ```sql
 -- confirm you get all tables in database
@@ -20,7 +20,25 @@ FROM information_schema.tables
 WHERE table_schema = 'your_database_name';
 ```
 
-### clear all rows from database
+### Clear all rows from database
+
+#### 1. Generate `DELETE FROM <table-name>` for all tables
+
+> If you are using phpmyadmin, enable 'Full  Text' ('Row above output' -> 'Extra Options' -> 'Full Text') to get full table names
+
+```sql
+SELECT CONCAT(
+  'TRUNCATE TABLE `', table_schema, '`.`', table_name, '`;'
+) AS stmt
+FROM information_schema.tables
+WHERE table_schema = 'db-name';
+```
+
+#### 2. execute generated statement to delete all rows from all tables
+
+Paste the list of generated statements in the format given below and execute.
+
+> If you are using phpmyadmin, disable 'Enable foreign key checks' option (this option is on left-side of 'Go' button)
 
 ```sql
 SET FOREIGN_KEY_CHECKS = 0;
@@ -33,9 +51,11 @@ TRUNCATE TABLE table3;
 SET FOREIGN_KEY_CHECKS = 1;
 ```
 
+#### 3. Reset AUTO_INCREMENT (optional)
+
 ```sql
--- generate 'TRUNCATE TABLE <table-name>' for all tables
-SELECT CONCAT('TRUNCATE TABLE `', table_name, '`;') AS stmt
-FROM information_schema.tables
-WHERE table_schema = 'your_database_name';
+ALTER TABLE `table1` AUTO_INCREMENT = 1;
+ALTER TABLE `table2` AUTO_INCREMENT = 1;
+...
 ```
+
