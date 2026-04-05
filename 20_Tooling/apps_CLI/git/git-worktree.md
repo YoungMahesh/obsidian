@@ -16,6 +16,24 @@ git worktree remove ../app-feature-x
 git branch -d feature-x
 ```
 
+
+Copy code to worktree branch once worktree code is merged
+```bash
+# checkout main repo to another branch, as worktree cannot access this branch until it is active
+# main repo:
+git checkout -b temp
+
+# move to main from worktree and copy code by creating new branch
+# worktree:
+git chekout main
+git checkout -b worktree-branch-1
+
+# main repo:
+git checkout main
+
+# now both main-repo and worktree have same code
+```
+
 ---
 
 👉 Advantages of Git Worktree:
