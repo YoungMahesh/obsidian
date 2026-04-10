@@ -2,23 +2,23 @@
 
 ## best plans
 1. Minimax token plan - $10/month
-	- not used yet
+	- Almost unlimited Minimax models - M2.7, M.25
 2. Opencode Go - $10/month
 	- $60 worth of tokens per month for top chinese models
-3. github copilot
-	- claude models at affordable price
+3. Github Copilot
+	- Claude models at affordable price
 4. OpenAI Go - $8/month 
 	- OpenAI codex - not used yet
-5. antigravity
+5. Antigravity
 	- currently have quota limit issues
 --- 
 
-## [[github-copilot]]
+## [[Github-copilot]]
 
 ## MiniMax 
 - [$10 / month](https://platform.minimax.io/subscribe/token-plan)
 	- 1500 model requests of Minimax M2.7 / 5 hours
-	
+
 ## Google
 ### [gemini cli](https://github.com/google-gemini/gemini-cli)
 - free 1000 requests per day for gemini 2.5 pro
@@ -48,11 +48,23 @@
 	- set 3: Gemini Flash 3
 		- almost unlimited quota
 
-## opencode
+## Opencode
+## Go plan
 - [with $10 go plan, you can use tokens of top models worth $60 tokens](https://opencode.ai/docs/go/#usage-limits)
 	- [some users claim that models are heavily quantised](https://www.reddit.com/r/opencodeCLI/comments/1s40z4p/opencode_go_plan_is_genuinely_the_worst_coding/)
-		- although, my experience was good with MiniMax m2.7 for nextjs app
 		- [founder debunked this theory](https://x.com/thdxr/status/2038474676310028384)
+		- I used both and does not detected any major difference
+
+
+## [Fireworks - firepass](https://docs.fireworks.ai/firepass)
+- Unlimited Kimi 2.5 Turbo for $7/week
+## [Ollama cloud](https://ollama.com/pricing)
+
+- plans: Free, $20, $100
+
+## [GLM Coding plan](https://z.ai/subscribe)
+- plans (per month): $10, $30, $80 
+- Many users reported very slow speed on $10 plan
 
 ## kilo code
 - pay only for what you use
