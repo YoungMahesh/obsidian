@@ -10,3 +10,7 @@
 - `/new` - start new session
 - `/sessions` - view history
 	- delete-session: hover on session and press `ctrl+d`
+
+
+### API keys
+Stored at `~/.local/share/opencode/auth.json`

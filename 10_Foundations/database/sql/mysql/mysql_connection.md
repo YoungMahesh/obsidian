@@ -1,4 +1,9 @@
 
+### cheatsheet
+
+```bash
+ssh -L 3310:localhost:3306 vps-user@vps-ip 
+```
 ### connection URI
 
 MySQL database URI:
