@@ -22,7 +22,7 @@ WHERE table_schema = 'your_database_name';
 
 ### Clear all rows from database
 
-#### 1. Generate `DELETE FROM <table-name>` for all tables
+#### 1. Generate `TRUNCATE TABLE <table-name>` for all tables
 
 > If you are using phpmyadmin, enable 'Full  Text' ('Row above output' -> 'Extra Options' -> 'Full Text') to get full table names
 
