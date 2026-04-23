@@ -16,7 +16,7 @@ It is defined in **RFC 6749 (2012)** and is maintained by the IETF.
 
 ---
 
-[[OAuth 2.0 Flows]]  [[OAuth 2.0 Authorization Flow]]
+[[OAuth 2.0 Flows]]  [[OAuth 2.0 - Authorization Flow]]
 
 ---
 

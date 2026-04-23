@@ -17,7 +17,7 @@ Flow:
 
 ## 1. App registers with service provider
 - App registers Redirect URI and obtains `client_id` (and `client_secret` for confidential backend apps) with the service-provider's authorization server
-- For public clients (SPA, mobile), app prepares PKCE values: `code_verifier` and `code_challenge`
+- For public clients (SPA, mobile), app prepares [[OAuth 2.0 - Authorization Flow with PKCE]]  values: `code_verifier` and `code_challenge`
 
 ## 1. User asks app to link to a service
 - User (in browser) clicks "Connect" in the app UI
