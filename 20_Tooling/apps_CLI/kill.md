@@ -13,4 +13,14 @@ kill <pid>
 
 # force kill (if normal kill command above does not worked)
 kill -9 <pid>
+
+
+# kill port 3000
+kill -9 $(lsof -t -i:3000)
+
+# find  related processes
+ps aux | grep next
+# kill nextjs or nodejs processes
+pkill -f next
+pkill -f node
 ```
