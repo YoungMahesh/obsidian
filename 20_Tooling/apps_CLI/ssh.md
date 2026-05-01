@@ -42,6 +42,11 @@ ssh -T git@github
 # e.g.  git@github.com:Web3Modal/web3modal.git  -> git@github:Web3Modal/web3modal.git
 ```
 
+### connect ssh server using username and password
+```bash
+# you will be prompted to enter password
+ssh username@hostname
+```
 ### setup ssh to connect with remote server / vps
 ```bash
 # 1. create ssh key inside `~/.ssh` directory

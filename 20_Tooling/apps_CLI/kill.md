@@ -20,7 +20,7 @@ kill -9 $(lsof -t -i:3000)
 
 # find  related processes
 ps aux | grep next
-# kill nextjs or nodejs processes
-pkill -f next
-pkill -f node
+
+# kill nextjs dev server
+pkill -f 'next dev'
 ```

@@ -1,5 +1,5 @@
 #package-manager 
-[[pnpm]]
+[[node]]   [[pnpm]]
 ## basic commands npm
 ```bash
 npm init -y     # create package.json file for your project

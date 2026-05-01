@@ -1,5 +1,4 @@
 
-
 - [Install](https://caddyserver.com/docs/install)
 
 ---

@@ -1,9 +1,16 @@
-[[npm]]
+[[node]]   [[npm]]
 ### install 
 ```bash
 # https://pnpm.io/installation#using-npm
 npm install -g pnpm@latest-10
 which pnpm
+```
+
+### switch version
+
+```bash
+corepack prepare pnpm@<version> --activate
+pnpm -v
 ```
 
 ## move project from npm to pnpm
