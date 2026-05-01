@@ -84,6 +84,8 @@ expect: {
 }
 ```
 
+Default value: 5000 (in ms - 5 seconds)
+
 👉 Behavior:
 * Retries until condition is met or timeout hits
 * Does NOT fail immediately
