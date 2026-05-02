@@ -12,5 +12,6 @@
   "showUnsupportedFiles": true,
   "defaultViewMode": "source",
   "attachmentFolderPath": "./",
-  "readableLineLength": false
+  "readableLineLength": false,
+  "showLineNumber": true
 }

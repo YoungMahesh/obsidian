@@ -1,4 +1,17 @@
 [[node]]   [[npm]]
+
+### basic commands
+```bash
+# install in dependencies
+pnpm add <pkg>
+
+# install in dev-dependencies
+pnpm add <pkg> --save-dev
+
+# move from dev-dependencies to dependencies
+pnpm add <pkg> --save-prod
+```
+
 ### install 
 ```bash
 # https://pnpm.io/installation#using-npm

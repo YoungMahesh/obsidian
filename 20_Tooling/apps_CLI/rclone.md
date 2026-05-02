@@ -57,13 +57,20 @@ rclone sync -i --progress /home/youngmahesh/downloads/docs drive1:docs --transfe
 #    --transfers=1 to fast transfer of big files to pen-drives
 #    --transfers=4 to fast transfer of big files to cloud
 #    --transfer=500 to fast transfer small files 
+```
 
+### delete files
+```bash
 rclone purge --progress drive1:another   # delete file, folder and content inside it
 # file deletions by "sync" and "purge" are preserved in "trash" of the cloud storage
 
 # https://rclone.org/commands/rclone_deletefile/
 rclone deletefile remote:path [flags]
+
+# remove all files starting with kkk_jjj; --dry-run to check which files will get deleted
+rclone delete remoteA:folderB --include "kkk_jjj*" --dry-run
 ```
+
 
 Set local path in configuration
 ```conf

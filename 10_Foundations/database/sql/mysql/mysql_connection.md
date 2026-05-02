@@ -46,10 +46,13 @@ FLUSH PRIVILEGES;
 ```
 
 ```sql
--- just for verification, list all users
--- \G = formatted output
-SELECT * FROM mysql.user\G
+-- list user and host from my
 SELECT user, host FROM mysql.user;
+
+-- list all users with all details related to them 
+-- \G = formatted output
+-- prints a lot of data, avoid using this
+SELECT * FROM mysql.user\G;
 ```
 
 ```sql

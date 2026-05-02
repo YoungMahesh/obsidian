@@ -1,5 +1,3 @@
-
-
 - `select version()` query to get mysql-server version
 ### sql commands
 
