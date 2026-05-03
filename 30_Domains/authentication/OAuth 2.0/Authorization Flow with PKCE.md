@@ -1,4 +1,4 @@
-OAuth 2.0 with PKCE (Proof Key for Code Exchange) is an extension of the standard OAuth 2.0 [[OAuth 2.0 - Authorization Flow]]  that makes it safe for public clients (like mobile apps, SPAs, or scripts without a secure backend).
+OAuth 2.0 with PKCE (Proof Key for Code Exchange) is an extension of the standard OAuth 2.0 [[Authorization Flow]]  that makes it safe for public clients (like mobile apps, SPAs, or scripts without a secure backend).
 
 ---
 

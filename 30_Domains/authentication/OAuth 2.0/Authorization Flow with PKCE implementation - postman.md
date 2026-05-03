@@ -14,7 +14,7 @@ While Client Creation, add postman redirect URL: https://oauth.pstmn.io/v1/brows
 
 ### 2. gather information needed for authorization request
 
-**Callback URL**: if you don't have your own callback url use callback url  provided by postman
+**Callback URL (Redirect URI)**: if you don't have your own callback url use callback url  provided by postman
 Callback url by postman: https://oauth.pstmn.io/v1/browser-callback
 
 **Auth URL**: `KeyClockAuthInfo.authorization_endpoint`
