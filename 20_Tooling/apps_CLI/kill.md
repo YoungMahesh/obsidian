@@ -13,7 +13,8 @@ kill <pid>
 
 # force kill (if normal kill command above does not worked)
 kill -9 <pid>
-
+# kill installed app
+pkill -9 postman
 
 # kill port 3000
 kill -9 $(lsof -t -i:3000)
