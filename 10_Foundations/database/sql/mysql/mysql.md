@@ -9,7 +9,7 @@
 [[mysql-statement_types]]
 ### database setup
 
-[[mysql.docker-compose]]  [[mysql_connection]]
+[[mysql.docker-compose]]   [[mysql connection]]   [[mysql users]]
 
  [[phpmyadmin.docker-compose]]
  
