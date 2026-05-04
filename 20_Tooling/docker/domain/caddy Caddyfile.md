@@ -8,10 +8,9 @@ pa.example.com {
 }
 
 # 'app.example.com' domain assigned locahost port 3001
-# docker container can access localhost using 'host.docker.internal'
 # IMPORTANT: the app running should be on "host 0.0.0.0", e.g. for nextjs app - `next dev -H 0.0.0.0`
 app.example.com {
- 	reverse_proxy host.docker.internal:3001
+ 	reverse_proxy <ip-address-of-server>:3001
 }
 
 # password protected docs

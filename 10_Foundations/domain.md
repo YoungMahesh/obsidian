@@ -54,13 +54,13 @@ Both records coexist without any conflict.
 
 OR you can use CNAME to point to main or sub-domains
 
-| Type      | Name          | Value             |
-| --------- | ------------- | ----------------- |
-| A         | `example.com` | `203.0.113.10`    |
-| CNAME     | `docs`        | `example.com`     |
-| CNAME<br> | `*.docs`      | `example.com`     |
-| CNAME     | `dashboard`   | `app.example.com` |
-| CNAME     | `*.dashboard` | `app.example.com` |
+| Type  | Name          | Value             |
+| ----- | ------------- | ----------------- |
+| A     | `example.com` | `203.0.113.10`    |
+| CNAME | `docs`        | `example.com`     |
+| CNAME | `*.docs`      | `example.com`     |
+| CNAME | `dashboard`   | `app.example.com` |
+| CNAME | `*.dashboard` | `app.example.com` |
 
 
 ---

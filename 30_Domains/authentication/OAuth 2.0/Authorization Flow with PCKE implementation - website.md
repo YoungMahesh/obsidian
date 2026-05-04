@@ -23,3 +23,9 @@ Browser → Backend → Authorization Server
 
 8. Backend redirects browser → frontend (logged-in state)
 ```
+
+
+Test:
+Select Project in: https://console.cloud.google.com/
+search 'Credentials' 
+click 'Create Credential' -> 'OAuth Client'
