@@ -49,6 +49,7 @@ docker container rm <container-id1> <container-id2> # remove stopped containers
 docker container rename curr_name new_name
 docker container stats  # check cpu and memory usage of all running containers
 docker container top <container-name> # list processes running by the container
+docker container inspect <container-name> | grep volume # get volume-name of container
 
 # real-time view of all containers
 docker stats
