@@ -26,6 +26,5 @@ Browser → Backend → Authorization Server
 
 
 Test:
-Select Project in: https://console.cloud.google.com/
-search 'Credentials' 
-click 'Create Credential' -> 'OAuth Client'
+visit: https://console.cloud.google.com/apis/credentials
+Click 'Create Credential' -> 'OAuth Client'
