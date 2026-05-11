@@ -1,9 +1,26 @@
 
 ### cheatsheet
 
+
+1. Add hostname `mysql`:
+	Add `127.0.0.2 mysql` to `/etc/hosts` 
+
+2. Bind ssh tunnel to `127.0.0.2`:
 ```bash
-ssh -L 3310:localhost:3306 vps-user@vps-ip 
+# left part: 127.0.0.2:3306 - defines local port
+# right part: localhost:3306 - defines remote vps port
+ssh -L 127.0.0.2:3306:localhost:3306 vps-user@vps-ip
 ```
+
+Define tunnel in ssh config
+```
+Host mydb
+    HostName vps-ip
+    User vps-user
+    LocalForward 127.0.0.2:3306 localhost:3306
+```
+Then connect with `ssh mydb`
+
 ### connection URI
 
 MySQL database URI:

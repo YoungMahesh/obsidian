@@ -1,0 +1,1 @@
+typescript contains information related to javascript

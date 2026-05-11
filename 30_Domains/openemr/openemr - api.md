@@ -1,4 +1,3 @@
-
 ## Setup REST API
 
 https://github.com/openemr/openemr/blob/master/API_README.md#-quick-start
@@ -33,9 +32,7 @@ Save and use - `Client APP ID` and `Client Secret APP ID` you get after submissi
 
 Go to "Top bar → Admin → System → API Clients" → Click on "Edit" in client name in list → Click "Enable Client"
 
-Try connecting app with OAuth2.0 Authorization Flow with PKCE, if you face error, check docker container logs: 
-`docker logs <openemr container name> --tail 10`
-
+> If you face errors while connecting app with OAuth2.0 Authorization Flow with PKCE,  check docker container logs at: `docker logs <openemr container name> --tail 10`
 
 ### create user
 
