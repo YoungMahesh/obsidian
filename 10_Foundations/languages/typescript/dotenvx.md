@@ -23,4 +23,8 @@ pnpm dotenvx decrypt -f [FileName]
 # inject env variables in decrypted form to the cli command 
 pnpm dotenvx run -f [envFileName] -- [CLI_Command]
 pnpm dotenvx run -f ./.env.dev -- next dev
+
+# define private key and then decrypt
+export DOTENV_PRIVATE_KEY=abc123
+pnpm dotenvx decrypt -f .env
 ```

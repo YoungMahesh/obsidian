@@ -1,6 +1,11 @@
 #web-development/framework
 # App router
 
+
+### documentation
+
+create APIs: https://nextjs.org/docs/app/getting-started/route-handlers
+
 ### default caching on server-components
 
 - pages get pre-rendered during build, so if you put you are calling `new Date()` in component, the date remains same (equal to time at which build happened)
