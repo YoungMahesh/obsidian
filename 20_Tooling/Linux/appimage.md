@@ -9,12 +9,12 @@
    - write configuration in .desktop file
      ```desktop
      [Desktop Entry]
-     Type=Application
      Name=Your App Name
      Exec=/path/to/your/YourAppImage.AppImage
      Icon=/path/to/your/app-icon.png
+     Type=Application
+     Categories=Utility
      Comment=Brief description of your app
-     Categories=Category;Of;Your;App
      ```
    - make desktop entry file executable: `chmod +x .local/share/applications/yourapp.desktop`
    - update desktop-database: `update-desktop-database ~/.local/share/applications/`

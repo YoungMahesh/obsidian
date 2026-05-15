@@ -1,15 +1,28 @@
 - Frontend+Backend
 	- NextJS
 - Backend
-	- Convex
+	- Convex (not-tested)
 - Styling: TailwindCSS with Shadcn
 - Database
 	- MySQL on vps in docker-container
 	- Drizzle ORM
 - Auth
-	- ClerkAuth
 	- BetterAuth
+	- ClerkAuth
 	- WorkOS
+- Domain setup
+	- [Caddy](https://caddyserver.com/docs/install#docker)
+- OAuth2.0 testing
+	-  [keycloak](https://www.keycloak.org/getting-started/getting-started-docker) - local
+	- google-auth
+- Testing
+	- Playwright
+- API Testing
+	- [Requestly](https://requestly.com/)
+- Publish documentation
+	- [docsify](https://docsify.js.org) (not-tested)
+- Publish API documentation
+	- OpenAPI spec file (exported from Requestly) + [swagger-ui docker container](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/) (not-tested)
 - Make localhost https
 	- [LocalTunnel](https://www.npmjs.com/package/localtunnel) - not reliable, slow and fails most of the times
 	- [[cloudflare#publish localhost to public using cloudflare domain]]
@@ -18,6 +31,6 @@
 	- Stripe; [Stripe-Recommendations](https://github.com/t3dotgg/stripe-recommendations)
 - MonoRepo: TurboRepo
 - analytics
-	- [posthog](https://posthog.com/)
+	- [posthog](https://posthog.com/) (not-tested)
 - pdf generation
 	- [playwright](https://www.npmjs.com/package/playwright)
