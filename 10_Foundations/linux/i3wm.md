@@ -12,6 +12,7 @@ sudo apt install i3
 bindsym $mod+f exec --no-startup-id dmenu_run
 ```
 - #search -  add new app to dmenu list, put their CLI execution command at `/usr/bin` 
+- execute `dmenu_path` to view all scripts available to dmenu
 
 ## status bar (at bottom)
 Here’s how you can hide/show your i3 bottom bar items, here we will hide **Wifi** and **IPv6** indicator:
