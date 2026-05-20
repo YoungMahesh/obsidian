@@ -1,5 +1,3 @@
-
-
 ### Configure domain provider
 
 1. Visit your domain-provider e.g.  [Cloudflare Registrar](https://www.cloudflare.com/en-in/products/registrar/) 
