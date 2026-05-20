@@ -23,3 +23,12 @@
 	- some keymaps like `ctrl+shift-p` only works when time different between pressing `ctrl+shift` and `p` is short
 
 - if some function get executed which you don't know how to turn off such as `i` is behaving as `Pause`, then plug-off and plug-in keyboard, this will reset the functionality
+
+### Spin Keyboards
+- Model: SpinBot Rage MK61 Mechanical Keyboard
+- problems
+	- cannot turn off backlight because if backlight is turned off, keyboard starts working (need to re-plug keyboard again)
+	- clicking keyboard button does not start suspended computer (ANT keyboards can), need to click power-button of CPU to start the computer
+	
+	
+
