@@ -24,11 +24,14 @@
 
 - if some function get executed which you don't know how to turn off such as `i` is behaving as `Pause`, then plug-off and plug-in keyboard, this will reset the functionality
 
-### Spin Keyboards
+### Spinbot Keyboards
 - Model: SpinBot Rage MK61 Mechanical Keyboard
 - problems
 	- cannot turn off backlight because if backlight is turned off, keyboard starts working (need to re-plug keyboard again)
 	- clicking keyboard button does not start suspended computer (ANT keyboards can), need to click power-button of CPU to start the computer
+	- customer service is un-responsive: 
+		- sent message by filling form, but did not received response even after days
+		- when clicked on 'User Manual' link for keyboard, got "Page not found"
 	
 	
 
