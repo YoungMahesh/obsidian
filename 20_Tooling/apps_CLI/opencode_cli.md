@@ -1,3 +1,5 @@
+
+#llm
 ### context
 - [AGENTS.md file in project root](https://opencode.ai/docs/rules/)
 
@@ -11,6 +13,8 @@
 - `/sessions` - view history
 	- delete-session: hover on session and press `ctrl+d`
 
+### configuration
+Stored at `~/.config/opencode/opencode.jsonc`
 
 ### API keys
 Stored at `~/.local/share/opencode/auth.json`

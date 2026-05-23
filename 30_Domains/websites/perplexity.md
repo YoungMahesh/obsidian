@@ -1,4 +1,4 @@
-#AI/provider
+#llm/provider
 
 - Turn off web-search, only chat with models with Perplexity Pro
 	- open new chat
