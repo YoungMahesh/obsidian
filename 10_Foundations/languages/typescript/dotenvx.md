@@ -3,6 +3,11 @@
 - https://dotenvx.com/
 
 ```bash
+pnpm dotenvx get <variable-name> -f .env.dev -fk .env.keys
+pnpm dotenvx decrypt -f .env.dev -fk .env.keys
+
+# -------------------------------------------
+
 pnpm install @dotenvx/dotenvx --save
 pnpm which dotenvx
 
