@@ -15,7 +15,6 @@ sudo wg-quick up wg0
 # disconnect
 sudo wg-quick down wg0
 
-
 # ------------ setup -------------------
 sudo apt install wireguard
 

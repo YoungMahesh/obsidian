@@ -52,6 +52,8 @@
 - plans (per month): $10, $30, $80 
 - Many users reported very slow speed on $10 plan
 
+## [neuralwatt](https://neuralwatt.com/)
+
 ## kilo code
 - pay only for what you use
 - buy prepaid credits with no expiry

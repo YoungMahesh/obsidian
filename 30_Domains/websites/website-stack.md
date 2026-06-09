@@ -21,8 +21,11 @@
 	- [Requestly](https://requestly.com/)
 - Publish documentation
 	- [docsify](https://docsify.js.org) (not-tested)
-- Publish API documentation
-	- OpenAPI spec file (exported from Requestly) + [swagger-ui docker container](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/) (not-tested)
+- Publish API documentation (with OpenAPI spec file support)
+	- [Swagger-ui](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/) 
+	- [Stoplight Elements](https://elements-demo.stoplight.io/)
+	- [Redoc](https://redocly.github.io/redoc)
+		- 'Try it' feature is paid in Replay not available in Redoc Community Edition
 - Make localhost https
 	- [LocalTunnel](https://www.npmjs.com/package/localtunnel) - not reliable, slow and fails most of the times
 	- [[cloudflare#publish localhost to public using cloudflare domain]]
