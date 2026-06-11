@@ -1,4 +1,11 @@
-A **UUID** stands for **Universally Unique Identifier**. It’s a 128-bit value used to uniquely identify something — like a user, file, database record, device, or session — without needing a central authority.
+A **UUID** stands for **Universally Unique Identifier**. 
+A UUID is always 128 bits (16 bytes).
+In Common string representation:
+- 32 hexadecimal characters
+- 4 hyphens
+- Total length: 36 characters
+It is used to uniquely identify something — like a user, file, database record, device, or session — without needing a central authority.
+
 
 Example UUID:
 
@@ -26,7 +33,7 @@ There are several types:
 
 * **UUIDv1** → based on timestamp + MAC address
 * **UUIDv4** → random (most common)
-* **UUIDv7** → time-ordered and modern, increasingly popular
+* **UUIDv7** → time-ordered and modern, increasingly popular, best for MySQL/PostgreSQL indexing
 
 ## UUID structure
 
