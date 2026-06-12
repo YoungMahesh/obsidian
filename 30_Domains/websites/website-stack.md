@@ -3,6 +3,9 @@
 - Backend
 	- Convex (not-tested)
 - Styling: TailwindCSS with Shadcn
+- Styling prompts for AI
+	- [TypeUI](https://www.typeui.sh/)
+	- [MotionSites](https://motionsites.ai/)
 - Database
 	- MySQL on vps in docker-container
 	- Drizzle ORM
