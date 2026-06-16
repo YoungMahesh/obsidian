@@ -1,4 +1,4 @@
-[[20_Tooling/docker/compose/openemr|openemr]]
+[[20_Tooling/docker/compose-files/openemr|openemr]]
 
 **OpenEMR** is a free, open-source **Electronic Medical Record (EMR)** and **Electronic Health Record (EHR)** system used by clinics, hospitals, and healthcare providers to manage patient data and operations.
 

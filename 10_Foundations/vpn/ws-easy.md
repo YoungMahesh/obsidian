@@ -1,3 +1,6 @@
+Concepts, Troubleshooting: [[ws-easy_troubleshoot]]
+Docker compose: [[20_Tooling/docker/compose-files/ws-easy|ws-easy]]
+
 ## Setup wireguard on server using wg-easy
 1. https://wg-easy.github.io/wg-easy/latest/examples/tutorials/basic-installation/
 2. https://wg-easy.github.io/wg-easy/latest/examples/tutorials/caddy/
@@ -20,6 +23,7 @@ sudo apt install wireguard
 
 # copy client-configuration download from wg-easy dashboard to /etc/wireguard
 sudo cp my-laptop.conf /etc/wireguard/wg0.conf
+sudo cp computer.conf /etc/wireguard/wg0.conf
 sudo chmod 600 /etc/wireguard/wg0.conf
 
 # check status

@@ -1,8 +1,8 @@
 
 [[docker-nodejs]]
 [[traefik.docker-compose]]
-[[mysql.docker-compose]]
-[[phpmyadmin.docker-compose]]
+[[20_Tooling/docker/compose-files/mysql]]
+[[phpmyadmin]]
 ## commands
 
 

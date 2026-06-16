@@ -1,4 +1,4 @@
 
-[[mysql.docker-compose]]
+[[20_Tooling/docker/compose-files/mysql]]
 
 [[mysql-binary_log]]

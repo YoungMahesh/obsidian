@@ -9,6 +9,7 @@
 - Database
 	- MySQL on vps in docker-container
 	- Drizzle ORM
+	- decimal.js to avoid [[Javascript Number problem]]
 - Auth
 	- BetterAuth
 	- ClerkAuth

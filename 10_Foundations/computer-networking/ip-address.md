@@ -7,3 +7,5 @@ curl ifconfig.me -4 && echo
 # get IPv6 address of your computer
 curl ifconfig.me -6 && echo
 ```
+
+You can also visit https://api.ipify.org to check your ip-address

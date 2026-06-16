@@ -9,9 +9,9 @@
 [[mysql-statement_types]]
 ### database setup
 
-[[mysql.docker-compose]]   [[mysql connection]]   [[mysql users]]
+[[20_Tooling/docker/compose-files/mysql]]   [[mysql connection]]   [[mysql users]]
 
- [[phpmyadmin.docker-compose]]
+ [[phpmyadmin]]
  
 [[mysql-backup]]  [[mysql_import]]
 

@@ -3,7 +3,7 @@
 Docker run is the command used to create and start a new container from a Docker image.
 
 
-Use [[mysql]] CLI from docker image to connect to a remote mysql instance
+Use [[10_Foundations/database/sql/mysql/mysql]] CLI from docker image to connect to a remote mysql instance
 ```bash
 # -it → interactive terminal
 # --rm → container auto-deletes after exit

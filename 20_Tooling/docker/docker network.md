@@ -3,8 +3,13 @@
 docker network ls
 docker network create <network-name>
 docker network rm <network-name1> <network-name2> ...
+
+# check containers attached to the network
 docker network inspect <network-name>
 #  under "Containers" section you will see list of containers on this network
+
+# check networks to which container is attached
+docker inspect <container-name> --format '{{json .NetworkSettings.Networks}}' | jq
 ```
 
 
