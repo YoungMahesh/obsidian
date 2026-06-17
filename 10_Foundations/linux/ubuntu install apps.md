@@ -23,6 +23,16 @@ Move it to `/opt` so it behaves like a proper installed app:
 sudo mv Postman /opt/Postman
 ```
 
+Verify if you can run the app:
+```bash
+/opt/Postman/Postman
+```
+
+If nothing happens, try `--no-sandbox`:
+```bash
+/opt/Postman/Postman --no-sandbox
+```
+
 ---
 
 ### 3. Create a symlink (so you can run it easily)
