@@ -1,11 +1,28 @@
 #cli/fetch
 
-```bash
-# Documentation: `curl --manual`
-#----------------------- Download files -----------------------
-curl https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png -o pokemon2.png # -o = output
+### Download file
 
-#----------------------- HTTP Requests -------------------------
+```bash
+curl https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png -o pokemon2.png # -o = output
+# -L = Follow HTTP redirects.
+#   GitHub release URLs often respond with something like:
+#     HTTP/1.1 302 Found
+#     Location: https://objects.githubusercontent.com/...
+#   Without -L, curl stops after receiving the redirect and won't download the actual file.
+#   With -L, curl automatically follows the redirect until it reaches the real file.
+# -o = Save the downloaded data to a file.
+#   Without -o, curl writes the response to stdout (your terminal).
+#   curl https://example.com - prints the webpage in your terminal.
+#   Using -o: curl -o page.html https://example.com, creates: page.html
+curl -L \
+    -o /tmp/nvim.tar.gz \
+    "https://github.com/neovim/neovim/releases/download/v0.12.3/nvim-linux-x86_64.tar.gz"
+
+
+```
+
+### HTTP requests
+```bash
 # keywords and flags
 -H   # set header of the request
 -i              # get response including headers
@@ -37,3 +54,7 @@ curl -X POST -F file=@myfile \
       "Size":"44"
   }
 ```
+
+
+### Documentation: 
+`man curl`

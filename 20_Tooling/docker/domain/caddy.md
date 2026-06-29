@@ -1,4 +1,3 @@
-
 - [Install](https://caddyserver.com/docs/install)
 
 [[caddy Caddyfile]]
