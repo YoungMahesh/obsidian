@@ -1,5 +1,3 @@
-
-
 On Linux, you create symbolic links (symlinks) using the `ln` command
 
 ---

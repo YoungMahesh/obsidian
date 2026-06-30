@@ -2,7 +2,6 @@
 
 ### 1. Extract the archive
 
-
 ```bash
 cd ~/Downloads
 # -x = extract; extract files from archives
