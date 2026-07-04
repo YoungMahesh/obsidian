@@ -1,3 +1,5 @@
+### suggestions
+- Buy NVMe instead of SSD storage, without it things like - `docker build`, `docker pull (extraction-step)` can take almost 10x more time.
 ### problem
 Suddenly, server-access is slowed due to full CPU, Memory usage on server.
 This issue can be experienced 
