@@ -12,6 +12,8 @@ ctrl-w   # toggle ignore whitespace
 /        # search text (during file focus), filter files (during file-list focus)
 ?        # open menu
 
+lazygit -c # print existing config
+
 q        # save changes & quit lazygit
 h        # move to previous section
 l        # move to next section

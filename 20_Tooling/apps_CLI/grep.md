@@ -9,6 +9,12 @@ grep [OPTIONS] PATTERN [FILE...]
 
 # search for the word "grep" in `example.txt`
 grep "grep" example.txt
+# print before and after 10 lines
+grep -C 10 "pattern" file.txt
+# print before 10 lines
+grep -B 10 "pattern" file.txt
+# print after 10 lines
+grep -C 10 "pattern" file.txt
 
 info grep
 ```
