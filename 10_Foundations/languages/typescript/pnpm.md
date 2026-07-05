@@ -51,3 +51,8 @@ rm -rf node_modules package-lock.json
 pnpm run dev
 # instead of - npm run dev
 ```
+
+## additional
+```bash
+pnpm store path
+```
