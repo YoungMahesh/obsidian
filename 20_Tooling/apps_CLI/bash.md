@@ -4,6 +4,7 @@
 #------------------------------ terminal ----------------------------
 Cntr + a  # move cursor to start of the line
 Cntr + e  # move cursor to end of the line
+Ctrl + j  # move to next line
 Cntr + f  # move cursor one letter forward
 Cntr + b  # move cursor one letter backward
 Cntr + p  # move to previous command in history
