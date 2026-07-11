@@ -64,6 +64,8 @@ update ticket set status = 'approved-2'; -- update all rows
 -- convert all amounts in balance column to negative
 UPDATE abc SET balance = -balance;
 
+-- remove leading and trailing spaces from code column of table
+UPDATE abc SET code = TRIM(code);
 ----------------------------- create rows --------------------------------------
 
 insert into info1 (name, amount, expiry_at)
@@ -75,6 +77,10 @@ values
     ('row2', 20),
     ('row3', 30);
 
+-- copy rows from one different database on same server
+INSERT INTO db2.table2 (tb2_code, tb2_description)
+SELECT table1.tb1_code, table1.tb1_description
+FROM db1.table1;
 -------------------------- delete rows ------------------------------------
 
 -- delete single row
