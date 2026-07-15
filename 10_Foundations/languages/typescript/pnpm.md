@@ -10,6 +10,9 @@ pnpm add <pkg> --save-dev
 
 # move from dev-dependencies to dependencies
 pnpm add <pkg> --save-prod
+
+# Check what would be updated
+pnpm outdated
 ```
 
 ### install 
@@ -22,7 +25,8 @@ which pnpm
 ### switch version
 
 ```bash
-corepack prepare pnpm@<version> --activate
+# do this inside repository, if you do it in ~/, package.json mentioning pnpm version will get created in ~/
+corepack use pnpm@<version>
 pnpm -v
 ```
 

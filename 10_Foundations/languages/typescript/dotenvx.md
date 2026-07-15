@@ -6,7 +6,14 @@
 pnpm dotenvx get <variable-name> -f .env.dev -fk .env.keys
 pnpm dotenvx decrypt -f .env.dev -fk .env.keys
 
-# -------------------------------------------
+# -------------------------------------------------------------
+
+# ------------- use existing private-key ----------------------
+# 1. paste private-key in .env.keys and public-key in .env
+# 2. put un-encrypted env variables in .env
+# 3. run `pnpm dotenvx encrypt`
+
+# -------------------------------------------------------------
 
 pnpm install @dotenvx/dotenvx --save
 pnpm which dotenvx
