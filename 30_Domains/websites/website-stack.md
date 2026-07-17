@@ -41,3 +41,4 @@
 	- [posthog](https://posthog.com/) (not-tested)
 - pdf generation
 	- [playwright](https://www.npmjs.com/package/playwright)
+- Virtual Office: [Gather Town](https://gather.town/)

@@ -1,4 +1,6 @@
 
+[[python-on-ubuntu]]
+
 [[python-basics]]
 
 [[python-data_structures]]
