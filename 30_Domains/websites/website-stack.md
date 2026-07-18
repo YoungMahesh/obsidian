@@ -42,3 +42,7 @@
 - pdf generation
 	- [playwright](https://www.npmjs.com/package/playwright)
 - Virtual Office: [Gather Town](https://gather.town/)
+- EVM blockchains
+	- Sei Testnet - [Explorer](https://testnet.seiscan.io)  [Faucet](https://docs.sei.io/learn/faucet)
+	- Sonic Testnet - [Explorer](https://testnet.sonicscan.org)  [Faucet](https://testnet.soniclabs.com/account)
+	
