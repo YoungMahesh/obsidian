@@ -10,7 +10,7 @@
 	- $200 inference credit for Minimax M2.7
 
 --- 
-## [[Github-copilot]]
+## [[github-copilot]]
 
 ## [[OpenAI]]
 
