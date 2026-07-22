@@ -14,7 +14,7 @@
 		- kimi-k2.7-code
 		- kimi-k2.6
 		- deepseek-v4-pro 
-		- deepseek-v4-flash	
+		- deepseek-v4-flash
 		- mimo-v2.5
 		- mimo-v2.5-pro
 - Endpoint 2 (api-type: messages): `https://opencode.ai/zen/go/v1/chat/completions`
