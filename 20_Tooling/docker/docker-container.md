@@ -36,6 +36,9 @@ docker logs --since 2026-02-12T05:00:00 -f <container>
 
 # Docker doesn’t have a built-in “head” option for logs, but you can easily view the first 20 lines by piping the output to head
 docker logs <container_name_or_id> | head -n 20
+
+# filter errors from logs
+docker logs caddy 2>&1 | grep -iE 'error|exception|fatal|panic|failed|traceback'
 ```
 
 ## list, start, stop, stats
