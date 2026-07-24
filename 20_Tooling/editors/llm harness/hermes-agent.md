@@ -34,6 +34,9 @@ Setup Telegram:
 4. Complete setup with done
 5. In Telegram-bot, execute `/sethome`, so that - Cron jobs and cross-platform messages will be delivered in Telegram-bot.
 
+Setup Github:
+1. install Github CLI
+2. execute `gh auth login`
 
 ### File system locations
 
