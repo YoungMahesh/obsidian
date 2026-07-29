@@ -28,10 +28,12 @@
 - Model: SpinBot Rage MK61 Mechanical Keyboard
 - problems
 	- cannot turn off backlight because if backlight is turned off, keyboard starts working (need to re-plug keyboard again)
+		- One solution: 
+			- I ran `sudo dmesg -w`, then pressed light-icon and then `Fn + [` (probably clicking light-icon multiple times is enough), 
+			- then lighting froze, keyboard stopped responding -> re-plugged keybord, keyboard is working but now light is gone
 	- clicking keyboard button does not start suspended computer (ANT keyboards can), need to click power-button of CPU to start the computer
 	- customer service is un-responsive: 
 		- sent message by filling form, but did not received response even after days
 		- when clicked on 'User Manual' link for keyboard, got "Page not found"
-	
 	
 
