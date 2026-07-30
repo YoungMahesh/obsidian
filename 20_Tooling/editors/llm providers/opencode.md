@@ -1,4 +1,14 @@
 ## Go plan
+
+### Usage
+
+Deepseek v4 flash to make changes, Minimax M3 to review changes
+- both provides $60 usage limit with go plan [while many other LLMs does not](https://opencode.ai/docs/go/#usage-limits).
+
+
+---
+### FAQ
+
 - [with $10 go plan, you can use tokens of top models worth $60 tokens](https://opencode.ai/docs/go/#usage-limits)
 	- [some users claim that models are heavily quantised](https://www.reddit.com/r/opencodeCLI/comments/1s40z4p/opencode_go_plan_is_genuinely_the_worst_coding/)
 		- [founder debunked this theory](https://x.com/thdxr/status/2038474676310028384)
