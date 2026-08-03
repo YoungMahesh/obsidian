@@ -20,9 +20,10 @@
 ## how to upgrade app version
 - go to https://anytype.io/
 - click download button - click Debian
+- quite anytype -> **remove it from app-drawer**
 - `sudo apt install ./<anytype-app-name>.deb`
-- quite and open anytype
-- you don't to login again
+- open anytype
+- you don't need to login again
 - your existing data will not be affected (even if not synced in previous version)
 	- you can verify this by browsing to last updated page history
 ## settings

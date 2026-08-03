@@ -18,4 +18,9 @@ create table info1(
 rename table info1 to info3;
 
 drop table info1;   -- delete table info1
+
+
+-- add id to table which does not have it
+-- `FIRST` at the end of query tells mysql to put this column as first column in table
+ALTER TABLE `info2` ADD `id` int AUTO_INCREMENT NOT NULL PRIMARY KEY FIRST;--> statement-breakpoint
 ```
