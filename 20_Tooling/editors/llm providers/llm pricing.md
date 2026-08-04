@@ -1,9 +1,11 @@
 #llm/provider  
 ## best plans
-1. [[minimax#token plan subscription]] - $10/month
-	- Almost unlimited Minimax models - M2.7
-2. [[opencode#Go plan]] - $10/month
-	- $60 worth of tokens per month for top chinese models
+1. [[opencode#Go plan]] - $10/month
+	- $60 worth of usage per month for top open-source models
+	- provides API key which can be used in other apps
+2.  [Command Code](https://commandcode.ai/pricing) - $1/month
+	- $40 worth of usage for deepseek v4 pro
+	- does not  provide API key to use in other apps
 3. [[ollama cloud#pricing]] - $20/month
 	- sufficient token usage for top chinese models
 4. (temporary) [General Compute](https://generalcompute.com) 
@@ -44,6 +46,9 @@
 	- set 3: Gemini Flash 3
 		- almost unlimited quota
 
+## Minimax 
+- [Token plan](https://platform.minimax.io/subscribe/token-plan) ($20/month)
+	- Almost unlimited usage Minimax models (minimax M3)
 
 ## [Fireworks - firepass](https://docs.fireworks.ai/firepass)
 - Unlimited Kimi 2.5 Turbo for $7/week

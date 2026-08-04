@@ -1,3 +1,7 @@
+
+[[opencode_cli]]
+
+Launch "Opencode Desktop" from i3wm_menu: search `ai.opencode.desktop`
 ## Go plan
 
 ### Usage
