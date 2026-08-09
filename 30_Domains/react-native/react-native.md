@@ -18,9 +18,21 @@ pnpm expo start --tunnel # if on remote server
 # scan QR code from expo-app on android, now you will see UI on android, whenever you make changes
 #   they will be reflected on mobile-app 
 
+# generate the native Android/iOS projects that Expo normally manages for you from Expo project configuration
+#   - creates ./android and ./ios directories with native source code/configuration needed to turn your React Native JavaScript/TypeScript app into an actual Android or iOS application
+pnpm expo prebuild
+
 # build app locally 
 # 1. confirm android-sdk is installed
-# 2. pnpm expo run:android --variant release
+# 2.a build APK only (if your phone is not connected to development computer) 
+cd android
+# use ./gradlew assembleDebug  # to build debug variant
+./gradlew assembleRelease
+# 2.b build and run APK on your device (if your device is connected development computer) 
+# pnpm expo run:android --variant release
+
+# 3. check apk file 
+# The APK will normally be created here: android/app/build/outputs/apk/release/app-release.apk
 ```
 
 Install Android SDK
@@ -54,6 +66,7 @@ source ~/.bashrc
 echo $ANDROID_HOME
 sdkmanager --version
 sdkmanager --list
+sdkmanager --licenses # accept licences
 ```
 
 
@@ -84,7 +97,3 @@ Additional concepts compared to react:
 - file-based Stack navigation - use `back` on smarphone (`import { BackHandler } from 'react-native';`) to move to previous screen
 - Platform API from react-native to know underneath system: `if (Platform.OS === 'android') {// Android-specific code}`
 - Status bar: Android has a system status bar, React Native/Expo lets you control aspects of it. `<StatusBar style="dark" />`
-
-### Terminology
-
-Metro is the JavaScript bundler used by React Native.
