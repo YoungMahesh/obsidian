@@ -9,6 +9,7 @@ herdr
 herdr --remote <server-name>
 prefix-mode q # detach; processes will continue run in background
 
+# after config change, you must stop herdr server and then launch herdr again
 herdr server stop
 
 # list keymaps
