@@ -54,6 +54,11 @@ docker container stats  # check cpu and memory usage of all running containers
 docker container top <container-name> # list processes running by the container
 docker container inspect <container-name> | grep volume # get volume-name of container
 
+# list all environment variables in docker container
+docker exec <container_name> printenv 
+# check env value of specific env in docker container
+docker exec <container_name> printenv DATABASE_URL 
+
 # real-time view of all containers
 docker stats
 # stats of only specific containers
