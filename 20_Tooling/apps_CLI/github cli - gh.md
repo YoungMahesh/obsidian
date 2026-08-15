@@ -5,6 +5,8 @@ gh auth login
 # -L == --limit; default limit 30
 gh repo list -L 10
 gh repo list <filter/organization-name>
+# pull github repository
+gh repo clone <owner>/<repo>
 # check remote repository of current repository
 gh repo view
 # change default branch
