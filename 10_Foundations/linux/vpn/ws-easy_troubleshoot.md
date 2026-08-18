@@ -1,5 +1,5 @@
 
-[[10_Foundations/vpn/ws-easy]]
+[[10_Foundations/linux/vpn/ws-easy]]
 
 ## Symptom
 

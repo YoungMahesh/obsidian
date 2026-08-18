@@ -1,4 +1,4 @@
-[[10_Foundations/vpn/ws-easy|ws-easy]]
+[[10_Foundations/linux/vpn/ws-easy|ws-easy]]
 
 ```yml
 volumes:
