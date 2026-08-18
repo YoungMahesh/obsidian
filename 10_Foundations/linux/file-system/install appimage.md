@@ -1,11 +1,13 @@
 #ubuntu/app-store 
 
-### add app.AppImage to CLI and i3wm_dmenu
-1. make appimage executable `chmod +x <name>.appimage`
-2. move .appimage to `~/.local/appimages`
-3. create symlink with `~/.local/bin`: `ln -s ~/.local/appimages/requestly.AppImage ~/.local/bin/requestly`
+### Add app.AppImage to CLI and i3wm_dmenu
 
-If you need `--no-sandbox`, then instead of creating symlink, add bash script as contents of `~/.local/bin/requestly` as:
+1. Make appimage executable `chmod +x <name>.appimage`
+2. Move .appimage to `~/.local/appimages`
+
+3. Check if your app can work without sandbox by executing `~/.local/appimages/requestly.AppImage`.
+	If  it can work then create symlink directly with `~/.local/bin` like this: `ln -s ~/.local/appimages/requestly.AppImage ~/.local/bin/requestly`.
+	Else instead of creating symlink, add bash script as contents of `~/.local/bin/requestly` as:
 ```bash
 #!/usr/bin/env bash
 /home/mahesh/Apps/requestly.AppImage --no-sandbox "$@"
@@ -15,7 +17,7 @@ If you need `--no-sandbox`, then instead of creating symlink, add bash script as
 
 > "$@" in a shell script means: “all arguments passed to this script”
 
-### add app.AppImage to GNOME application menu
+### Add app.AppImage to GNOME application menu
 
 1. make appimage executable `chmod +x <name>.appimage`
 2. move .appimage to `~/.local/appimages`

@@ -13,6 +13,18 @@
 		- ref: https://clerk.com/docs/references/nextjs/current-user
 		- `import {cache} from 'react'` can help reduce backend-api calls by wrapping `currentUser()` with `cache()`
 			- ref: https://github.com/clerk/javascript/issues/4894
+
+
+### get user email and other details in `auth()` return object
+
+- you can customize session token to get user's primary email and other important profile data: https://clerk.com/docs/guides/sessions/customize-session-tokens
+
+- path: dashboard → Configure → Sessions → Customize session token → Claims → Example:
+```json
+{
+	"primaryEmail": "{{user.primary_email_address}}"
+}
+```
 ### change domain
 
 - update domain and DNS records in dashboard.clerk.com -> project -> configure/Developers/Domains/DNS

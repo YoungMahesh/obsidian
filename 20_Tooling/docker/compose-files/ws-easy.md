@@ -8,7 +8,11 @@ services:
   wg-easy:
     environment:
       - PORT=80
-    image: ghcr.io/wg-easy/wg-easy:15.3.0
+    #  - HOST=0.0.0.0
+    #  - INSECURE=false
+    # which network interface on the host should be used for forwarding/NATing VPN traffic to the internet
+    #  - WG_DEVICE=eth0
+    image: ghcr.io/wg-easy/wg-easy:15.4.0
     container_name: wg-easy
     networks:
       wg:
@@ -33,9 +37,6 @@ services:
       - net.ipv6.conf.default.forwarding=1
 
 networks:
-# do not place other networks like 'caddy_net' here, it may create problems like:
-#     ws-easy_client cannot access internet because multiple network will create multiple interfaces (e.g. eth0, eth1, etc), and ws-easy server trying to connect with Internet using wrong network-interface
-#     for more info, check [[ws-easy_troubleshoot]]
   wg:
     name: wg
     driver: bridge
@@ -45,14 +46,20 @@ networks:
       config:
         - subnet: 10.42.42.0/24
         - subnet: fdcc:ad94:bacf:61a3::/64
-
 ```
 
 
 ### Domain setup
 
 Caddy compose file:
-```
+```yml
+# attach network to caddy-service
+services:
+  caddy:
+    networks:
+      - wg
+
+# define network in network-section
 networks:
 	...
     wg:
@@ -63,6 +70,5 @@ Caddyfile:
 ```
 vpn.example.com {
     reverse_proxy wg-easy:80
-    # tls internal
 }
 ```

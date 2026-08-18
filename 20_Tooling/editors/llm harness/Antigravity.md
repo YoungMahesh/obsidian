@@ -1,4 +1,35 @@
 
+Install Antigravity IDE
+
+### Antigravity CLI
+
+Start: `agy`
+
+Start with allowing all permissions: `agy --dangerously-skip-permissions`
+
+Commands inside TUI:
+```bash
+/resume # chat history
+/plan # plan mode
+/model # change model or thinking effor
+<esc> # back
+```
+
+**Keymaps**
+Add to `~/.gemini/antigravity-cli/keybindings.json`
+```json
+{
+  "navigation.down": [
+    "down",
+    "ctrl+n"
+  ],
+  "navigation.up": [
+    "up",
+    "ctrl+p"
+  ]
+}
+```
+
 ## Settings
 ### [Sandbox Mode](https://antigravity.google/docs/sandbox-mode)
 

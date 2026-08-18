@@ -22,6 +22,7 @@ git config user.name "John Doe" # update User/Author name
 git config user.email johndoe@example.com
 git config core.editor "code --wait"	# set vs-code default editor for git
 git config core.editor "nano -w"       # set nano as default editor for git
+git config --global core.editor "vim"
 ```
 
 ## credentials

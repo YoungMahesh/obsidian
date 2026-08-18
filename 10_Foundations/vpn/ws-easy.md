@@ -34,3 +34,9 @@ ip addr show wg0
 curl ifconfig.me
 # If wg-easy generated a full-tunnel configuration (`AllowedIPs = 0.0.0.0/0, ::/0`), the IP returned by `curl` should be your VPS's public IP.
 ```
+
+Reset dashboard password:
+```bash
+docker exec -it wg-easy cli db:admin:reset
+# you will be prompted to provide new password, paste new password and click enter
+```
