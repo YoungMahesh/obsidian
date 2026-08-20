@@ -88,6 +88,14 @@ ssh -L 3310:localhost:3306 vps-user@vps-ip
 # port on right side - locahost:3306 is port on vps-server
 ```
 
+### Create tunnel using `LocalForward` in ssh-config:
+```config
+Host myserver
+    HostName example.com
+    User root
+    LocalForward LOCAL_PORT DESTINATION_HOST:DESTINATION_PORT
+```
+
 ### move files
 ```bash
 # move file from vps to local

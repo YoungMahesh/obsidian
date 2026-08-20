@@ -7,6 +7,7 @@ lazygit  # execute inside repository to view git
 v        # visual mode to stage/unstage individual lines
 j        # move to next hunk/line
 k        # move to previous hunk/line
+<enter>  # toggle - open/close directory in left-sidebar
 <space>  # stage/unstage hunk/line
 ctrl-w   # toggle ignore whitespace
 /        # search text (during file focus), filter files (during file-list focus)

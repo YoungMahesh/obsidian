@@ -19,11 +19,12 @@ TCP, UDP
 
 ###  5. Session      
 
- Session management    
+ Session management, [[TLS]]
 
 ### 6. Presentation 
 
-Encryption, Compression  
+Encryption, Compression, [[TLS]]
+
 ###  7. Application  
 
  HTTP, FTP, SMTP, DNS   

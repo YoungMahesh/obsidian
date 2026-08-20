@@ -37,6 +37,13 @@ curl ifconfig.me
 
 Reset dashboard password:
 ```bash
+# reset password
 docker exec -it wg-easy cli db:admin:reset
 # you will be prompted to provide new password, paste new password and click enter
+
 ```
+
+
+Get dashboard username: 
+- when you reset password using `cli db:admin:reset`, you get admin password in output:
+	- `Successfully updated admin user 1 (<username>)`

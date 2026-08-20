@@ -2,6 +2,7 @@ Run on remote server:
 ```bash
 npx t3@latest service install
 npx t3@latest service status
+npx t3@latest pair
 npx t3@latest service update
 npx t3@latest service uninstall
 # t3code does not officially support service start and stop
