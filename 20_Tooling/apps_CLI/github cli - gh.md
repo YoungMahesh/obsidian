@@ -1,6 +1,5 @@
 ```bash
 gh repo create
-gh auth login
 
 # -L == --limit; default limit 30
 gh repo list -L 10
@@ -23,3 +22,14 @@ gh workflow run build.yml --repo <org-name>/<repo-name> --ref UI-improvements
 # NOTE: If your workflow file is not on default branch, you may face error, 
 #   in this case first merge minimum workflow file to default branch or temporarily change default branch
 ```
+
+Credentials management:
+You can give fine grained access to github cli by login through tokens, check [[github#Token Generation]]
+```bash
+gh auth login
+gh auth status
+gh auth logout
+```
+
+Installation: https://cli.github.com/
+
