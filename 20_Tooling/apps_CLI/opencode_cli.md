@@ -43,6 +43,9 @@ opencode attach http://localhost:4097
 	- delete-session: hover on session and press `ctrl+d`
 - `win+a` = select all text
 
+### MCPs
+- https://context7.com/
+- https://exa.ai/
 ### configuration
 Stored at `~/.config/opencode/opencode.jsonc`
 

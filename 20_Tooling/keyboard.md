@@ -30,6 +30,8 @@
 	- cannot turn off backlight because if backlight is turned off, keyboard starts working (need to re-plug keyboard again)
 		- One solution: 
 			- I clicked `Fn + [` I think two times -> then lighting froze, keyboard stopped responding -> re-plugged keybord, keyboard is working but now light is gone
+		- Second solution:
+			- I disconnected and connected keyboard from usb-adapter -> then clicked `Fn + [` one time, light is off and keyboard is working
 	- clicking keyboard button does not start suspended computer (ANT keyboards can), need to click power-button of CPU to start the computer
 	- customer service is un-responsive: 
 		- sent message by filling form, but did not received response even after days
