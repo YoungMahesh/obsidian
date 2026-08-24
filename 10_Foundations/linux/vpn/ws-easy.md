@@ -15,19 +15,22 @@ Docker compose: [[20_Tooling/docker/compose-files/ws-easy|ws-easy]]
 ```bash
 # connect
 sudo wg-quick up wg0
-# disconnect
 sudo wg-quick down wg0
+
+# for long term use you can connect start/stop connection with some aliases, e.g. 
+#   `alias vpn11 ='sudo wg-quick up wg0'`
+#   `alias vpn10 = sudo wg-quick down wg0`
+# disconnect
 
 # ------------ setup -------------------
 sudo apt install wireguard
 
-# copy client-configuration download from wg-easy dashboard to /etc/wireguard
-sudo cp my-laptop.conf /etc/wireguard/wg0.conf
-sudo cp computer.conf /etc/wireguard/wg0.conf
+# move client-configuration downloaded from wg-easy dashboard to /etc/wireguard
+sudo mv computer.conf /etc/wireguard/wg0.conf
 sudo chmod 600 /etc/wireguard/wg0.conf
 
 # check status
-sudo wg
+sudo wg-quick up wg0
 
 # test connectivity
 ip addr show wg0

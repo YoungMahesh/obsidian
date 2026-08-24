@@ -13,6 +13,13 @@ pnpm add <pkg> --save-prod
 
 # Check what would be updated
 pnpm outdated
+
+# run package installed in current project
+pnpm exec <pkg> <pkg-command>
+
+# equivalent of `npx` in npm
+# downalod (if not already available) package, execute it, store it in cache to use it later on or remove automatically from cache in  during future cleanup
+pnpm dlx <pkg> <pkg-command>
 ```
 
 ### install 

@@ -1,6 +1,3 @@
-
-
-
 ## symmetric encryption
 - one key does both: encrypt + decrypt
 - fast
