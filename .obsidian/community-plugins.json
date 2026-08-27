@@ -2,7 +2,6 @@
   "obsidian-vimrc-support",
   "obsidian-git",
   "obsidian-tagfolder",
-  "quickadd",
-  "calendar",
-  "copilot"
+  "copilot",
+  "quickadd"
 ]
