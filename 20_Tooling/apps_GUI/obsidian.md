@@ -6,7 +6,7 @@
 - [git](https://github.com/Vinzent03/obsidian-git)
 - [TagFolder](https://github.com/vrtmrz/obsidian-tagfolder)
 	- Obsidian have built-in Tag-support, but it does not list _Untagged_ files
-
+- [[obsidian_quick-add]]
 ## relations
 1. Folders are one-to-many — one folder can hold many files that could be about anything.
 2. Tags are many-to-many — a file can have multiple tags, and a tag can be used on multiple files.
