@@ -32,6 +32,8 @@
 			- I clicked `Fn + [` I think two times -> then lighting froze, keyboard stopped responding -> re-plugged keybord, keyboard is working but now light is gone
 		- Second solution:
 			- I disconnected and connected keyboard from usb-adapter -> then clicked `Fn + [` one time, light is off and keyboard is working
+		- Third solution:
+			- Keyboard light-off with keyboard typing working only happens when i click `Fn + [` when light theme is light blinking in default-mode; it does not work in theme when light blink on key-press
 	- clicking keyboard button does not start suspended computer (ANT keyboards can), need to click power-button of CPU to start the computer
 	- customer service is un-responsive: 
 		- sent message by filling form, but did not received response even after days

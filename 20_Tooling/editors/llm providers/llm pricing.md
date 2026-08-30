@@ -3,12 +3,16 @@
 1. [[opencode#Go plan]] - $10/month
 	- $60 worth of usage per month for top open-source models
 	- provides API key which can be used in other apps
-2.  [Command Code](https://commandcode.ai/pricing) - $1/month
+2. [Google Antigravity](https://antigravity.google/)
+	- $20/month pro plan included in Jio unlimited 5G plan in India
+3.  [Command Code](https://commandcode.ai/pricing) - $1/month
 	- $40 worth of usage for deepseek v4 pro
 	- does not  provide API key to use in other apps
-3. [[ollama cloud#pricing]] - $20/month
+4. [Nvidia build](https://build.nvidia.com/) 
+	- sufficient free quota
+5. [[ollama cloud#pricing]] - $20/month
 	- sufficient token usage for top chinese models
-4. (temporary) [General Compute](https://generalcompute.com) 
+6. (temporary) [General Compute](https://generalcompute.com) 
 	- $200 inference credit for Minimax M2.7
 
 --- 
