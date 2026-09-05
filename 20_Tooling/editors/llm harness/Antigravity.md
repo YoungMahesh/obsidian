@@ -1,4 +1,4 @@
-### Antigravity IDE
+## Antigravity IDE
 
 Installation:
 ```bash
@@ -24,15 +24,15 @@ mv antigravity-ide-v2.5.5 /opt/
 which antigravity
 ```
 
-#### Settings
-### [Sandbox Mode](https://antigravity.google/docs/sandbox-mode)
+### Settings
+#### [Sandbox Mode](https://antigravity.google/docs/sandbox-mode)
 
 Path: `settings -> Agent -> Terminal -> Enable Terminal Sandbox`
 
 When sandboxing is enabled, the Agent's terminal commands are subject to the following restrictions:
 - **File System**: Commands can only write to your designated workspace directory and essential system locations. This prevents the Agent from accidentally deleting or modifying files outside your project.
 
-### Antigravity CLI
+## Antigravity CLI
 
 Start: `agy`
 
@@ -44,10 +44,15 @@ Commands inside TUI:
 /plan # plan mode
 /model # change model or thinking effor
 <esc> # back
+
+# use `!` to run bash commands
+# list files and directories in current directory
+! ls
 ```
 
-#### Keymaps
-Add to `~/.gemini/antigravity-cli/keybindings.json`
+#### configuration files
+
+File: `~/.gemini/antigravity-cli/keybindings.json`
 ```json
 {
   "navigation.down": [
@@ -61,6 +66,17 @@ Add to `~/.gemini/antigravity-cli/keybindings.json`
 }
 ```
 
+File: `~/.gemini/antigravity-cli/settings.json`
+```json
+{
+  "colorScheme": "dark",
+  "editorMode": "vim",
+  "trustedWorkspaces": [
+    ...
+  ],
+  "vimInsertFirst": true
+}
+```
 #### Config
 
 Enable vim:
@@ -68,3 +84,10 @@ Enable vim:
 	- Editor mode: vim
 	- Editor mode > insert first: on
 
+
+Sandboxing:
+- `/config`
+	- Sandbox mode: on
+	- Non-Workspace Access: off
+	- Tool Permission: proceed-in-sandbox
+	

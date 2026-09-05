@@ -35,8 +35,17 @@ lshw -short
 # shows total, used, available memory
 free -h
 ```
-### cpu
+### CPU
 ```bash
 # get CPU name, architecture, cores, cache
 lscpu
+```
+
+
+### STORAGE
+
+#check-storage
+
+```bash
+df -h
 ```
