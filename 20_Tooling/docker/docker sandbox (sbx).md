@@ -1,4 +1,3 @@
-
 ## setup [[Antigravity#Antigravity CLI]]
 
 ```bash
@@ -46,7 +45,12 @@ pnpm store path # verify store path
 pnpm i
 
 # next time you can go to your project path, run:
+cd ~/projects/test1
+# go inside sandbox
 sbx run shell
+# if you are going to run app inside sandbox, publish it's port to host, so host can access it
+# your can only publish using `sbx ports` when sandbox is running, you cannot publish for stopped sandboxes
+sbx ports shell-test1 --publish 3000:3000
 # inside sandbox, run:
 agyd
 # keep antigravity's own sandbox mode off, else it will get problems finding `pnpm`

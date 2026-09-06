@@ -1,6 +1,12 @@
 
 
 [[drizzle_select]]
+
+Verify if can access the database:
+```bash
+# we are considering database-url is encrypted with dotenvx
+pnpm dotenvx run -- node -e "const mysql=require('mysql2'); const u=new URL(process.env.DATABASE_URL); const c=mysql.createConnection({host:u.hostname,port:Number(u.port),user:decodeURIComponent(u.username),password:decodeURIComponent(u.password),database:u.pathname.slice(1)}); c.on('error',e=>console.error(e)); c.connect(e=>{console.error(e||'CONNECTED'); c.end()})"
+```
 ## concepts
 - `drizzle-kit push` = `drizzle-kit generate` + `drizzle-kit migrate`
 - you need to create separate `drizzle.config.ts` file for different environments
