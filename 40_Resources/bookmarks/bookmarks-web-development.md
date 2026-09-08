@@ -10,18 +10,21 @@
 	- docker image: MySQL + phpMyAdmin or Postgres + Adminer
 	- Drizzle ORM
 	- decimal.js to avoid [[Javascript Number problem]]
+- Remote sandboxes
+	- [Modal](https://modal.com)
+		- No need to set web-url to visit UI of running app (`next run dev`), can do that using port forwarding on vscode
 - Auth
 	- BetterAuth
 	- ClerkAuth
 	- WorkOS
-- OAuth2.0 testing
-	-  [keycloak](https://www.keycloak.org/getting-started/getting-started-docker) - local
-	- google-auth
 - Testing
 	- [Vitest](https://vitest.dev/) - Unit and Integration testing
 	- Playwright - End to End Testing
-- API Testing
-	- Local NodeJS scripts using `fetch()` API
+	- API Testing
+		- Local NodeJS scripts using `fetch()` API
+	- OAuth2.0 testing
+		-  [keycloak](https://www.keycloak.org/getting-started/getting-started-docker) - local
+		- google-auth
 - Make localhost https
 	- [LocalTunnel](https://www.npmjs.com/package/localtunnel) - not reliable, slow and fails most of the times
 	- [[cloudflare#publish localhost to public using cloudflare domain]]
