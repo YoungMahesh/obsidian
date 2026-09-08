@@ -1,0 +1,31 @@
+- Frontend+Backend
+	- NextJS
+- Backend
+	- Convex (not-tested)
+- Styling: TailwindCSS with Shadcn
+- Styling prompts for AI
+	- [TypeUI](https://www.typeui.sh/)
+	- [MotionSites](https://motionsites.ai/)
+- Database
+	- docker image: MySQL + phpMyAdmin or Postgres + Adminer
+	- Drizzle ORM
+	- decimal.js to avoid [[Javascript Number problem]]
+- Auth
+	- BetterAuth
+	- ClerkAuth
+	- WorkOS
+- OAuth2.0 testing
+	-  [keycloak](https://www.keycloak.org/getting-started/getting-started-docker) - local
+	- google-auth
+- Testing
+	- [Vitest](https://vitest.dev/) - Unit and Integration testing
+	- Playwright - End to End Testing
+- API Testing
+	- Local NodeJS scripts using `fetch()` API
+- Make localhost https
+	- [LocalTunnel](https://www.npmjs.com/package/localtunnel) - not reliable, slow and fails most of the times
+	- [[cloudflare#publish localhost to public using cloudflare domain]]
+- MonoRepo: TurboRepo
+- PDF generation
+	- [playwright](https://www.npmjs.com/package/playwright)
+- Virtual Office: [Gather Town](https://gather.town/)

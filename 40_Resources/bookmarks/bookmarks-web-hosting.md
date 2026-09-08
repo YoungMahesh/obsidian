@@ -1,28 +1,18 @@
 - Frontend+Backend
-	- NextJS
-- Backend
-	- Convex (not-tested)
-- Styling: TailwindCSS with Shadcn
-- Styling prompts for AI
-	- [TypeUI](https://www.typeui.sh/)
-	- [MotionSites](https://motionsites.ai/)
+	- NextJS: [Vercel](https://vercel.com) or VPS docker container
 - Database
-	- MySQL on vps in docker-container
-	- Drizzle ORM
-	- decimal.js to avoid [[Javascript Number problem]]
+	- Postgres: [Neon](https://neon.com/pricing) or VPS docker container
+- S3 object storage: [Neon](https://neon.com/pricing)
 - Auth
 	- BetterAuth
 	- ClerkAuth
 	- WorkOS
 - Domain setup
-	- [Caddy](https://caddyserver.com/docs/install#docker)
+	- If on VPS: [Caddy](https://caddyserver.com/docs/install#docker)
+	- Else: provider will provide dashboard for domain setup
 - OAuth2.0 testing
 	-  [keycloak](https://www.keycloak.org/getting-started/getting-started-docker) - local
 	- google-auth
-- Testing
-	- Playwright
-- API Testing
-	- [Requestly](https://requestly.com/)
 - Publish documentation
 	- [docsify](https://docsify.js.org) (not-tested)
 - Publish API documentation (with OpenAPI spec file support)
@@ -30,17 +20,11 @@
 	- [Stoplight Elements](https://elements-demo.stoplight.io/)
 	- [Redoc](https://redocly.github.io/redoc)
 		- 'Try it' feature is paid in Replay not available in Redoc Community Edition
-- Make localhost https
-	- [LocalTunnel](https://www.npmjs.com/package/localtunnel) - not reliable, slow and fails most of the times
-	- [[cloudflare#publish localhost to public using cloudflare domain]]
 - Payments
 	- Web3 Wallet
 	- Stripe; [Stripe-Recommendations](https://github.com/t3dotgg/stripe-recommendations)
-- MonoRepo: TurboRepo
-- analytics
+- Analytics
 	- [posthog](https://posthog.com/) (not-tested)
-- pdf generation
-	- [playwright](https://www.npmjs.com/package/playwright)
 - Virtual Office: [Gather Town](https://gather.town/)
 - EVM blockchains
 	- Sei Testnet - [Explorer](https://testnet.seiscan.io)  [Faucet](https://docs.sei.io/learn/faucet)
