@@ -2,8 +2,7 @@
 
 ```bash
 # access rclone using UI
-rclone rcd --rc-web-gui
-rclone rcd --rc-web-gui --rc-user me --rc-pass mypass
+rclone gui
 
 rclone [options] subcommand source destination  # syntax
 rclone [options] --help  # get help for rclone-command
