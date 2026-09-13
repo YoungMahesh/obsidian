@@ -1,7 +1,16 @@
-#domain/email-forwarding #email
+#domain/email-routing #email
 
-# email-forwarding
-- supports single rule which will send all aliases to desired email
+# Email Routing
+- Search and select 'email routing' in your cloudflare dashboard
+- Select domain and setup routing
+- In Email Routing dashboard
+	- Go to 'Destination Addresses' tab -> Add email on which you want to receive email
+	- Go to 'Routing rules' -> Edit 'Catch-all' rule
+		- Action: Send to an Email
+		- Destination: `<select email to which you want to receive emails>`
+	- Toggle 'Status' to 'Active'
+- Supports single rule which will send all aliases to desired email
+- Test by sending and email to `<anything>@<domain you registered>`
 
 # cloudflare tunnel
 

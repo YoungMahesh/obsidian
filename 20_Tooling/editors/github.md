@@ -24,3 +24,7 @@ Visit github.com/settings/apps/new and fill the form:
 5. Generate Token
 
 
+### Pull and Push to repository using token
+1. Create fine grained token with Permission: `Contents: Read and write`
+2. Execute: `git clone https://oauth2:<github-token>@github.com/<owner-username>/<repo-name>.git
+` 
