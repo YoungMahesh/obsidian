@@ -13,6 +13,9 @@
 - Remote sandboxes
 	- [Modal](https://modal.com)
 		- No need to set web-url to visit UI of running app (`next run dev`), can do that using port forwarding on vscode
+		- $30/month free credits, with average development this is more than enough for whole month.
+	- Github Codespaces
+	  - 60 hours of devlopment environment for free per month.
 - Auth
 	- BetterAuth
 	- ClerkAuth

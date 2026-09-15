@@ -11,6 +11,7 @@ Sandbox pricing:
 	- [Limit Amount](https://modal.com/docs/guide/resources#resource-limits): 
 		- The maximum capacity the container is permitted to consume. Host throttles execution after this amount.
 	- Spare resources: If your sandbox processes needs more resources than your request amount, modal automatically provides that to your sandbox (if resources are available to modal). But this will not cross the **Limit Amount**
+	  - **Note**: Modal does not provide spare RAM for VM Sandboxes, so if your process e.g. `pnpm install` sandbox needs 4 GB of RAM, but you have requested 1GB, then the process gets killed
 	- Your bill = Requested Amount + Spare resources you used
 		- You'll be charged based on whichever is higher: the amount you request or the amount you actually use. 
 - Each container has a minimum request of 128 MiB of memory and 0.125 CPU cores, which you can increase if you need more resources.

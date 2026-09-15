@@ -1,5 +1,10 @@
 - [Account access to Third party](https://github.com/settings/applications)
 
+## Githuh Codespaces
+-  Free plan: 
+  - 60 hours of run time on a 2 core 8 GB codespace. 
+  - 2 core codespace is more than enough for most projects.
+  - 60 hours is considerable time for development
 
 ## Create new app
 
@@ -26,5 +31,4 @@ Visit github.com/settings/apps/new and fill the form:
 
 ### Pull and Push to repository using token
 1. Create fine grained token with Permission: `Contents: Read and write`
-2. Execute: `git clone https://oauth2:<github-token>@github.com/<owner-username>/<repo-name>.git
-` 
+2. Execute: `git clone https://oauth2:<github-token>@github.com/<owner-username>/<repo-name>.git`
