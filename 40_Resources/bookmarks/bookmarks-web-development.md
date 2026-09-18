@@ -16,6 +16,9 @@
 		- $30/month free credits, with average development this is more than enough for whole month.
 	- Github Codespaces
 	  - 60 hours of devlopment environment for free per month.
+- Web Search for AI Agents
+  - [Exa AI](https://exa.ai)
+    - $10/month free credits
 - Auth
 	- BetterAuth
 	- ClerkAuth
