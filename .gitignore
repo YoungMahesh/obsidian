@@ -2,7 +2,10 @@
 .obsidian/workspace-mobile.json
 
 # ai-agent
-.agents/
+.agents/*
+!.agents/skills/
+.agents/skills/*
+!.agents/skills/research-to-note/
 .claude/
 .copilot/
 .opencode/
