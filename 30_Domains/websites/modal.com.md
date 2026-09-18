@@ -3,6 +3,27 @@
 - [Standard Sandboxes](https://modal.com/docs/guide/sandboxes): do not support Docker
 - [VM Sandboxes](https://modal.com/docs/guide/vm-sandboxes): support Docker
 
+## Sandbox timeouts
+
+Ref: [Sandbox SDK](https://modal.com/docs/sdk/py/latest/Sandbox)
+
+| Parameter      |                                             Default | Minimum |                          Maximum |
+| -------------- | --------------------------------------------------: | ------: | -------------------------------: |
+| `timeout`      |                                        300 s (5 min) |      1 s |                86,400 s (24 h) |
+| `idle_timeout` | `None` (disabled; stays active until `timeout`)     |      1 s | `timeout` value (up to 24 h)   |
+
+- `timeout` = **absolute maximum total lifetime** from creation — **not** a command or API-call timeout; Modal terminates the Sandbox when reached, even if still running. For work beyond 24 h, save state via filesystem snapshots and resume in a new Sandbox.
+- `idle_timeout` = terminate after that much idleness; default `None`. Active means an `sb.exec(...)` process is running, data is written to `sb.stdin`, or a TCP tunnel connection is open.
+- With both set, whichever occurs first terminates the Sandbox.
+
+```python
+sandbox = modal.Sandbox.create(
+    ...,
+    timeout=24 * 60 * 60,  # absolute lifetime: 24 h
+    idle_timeout=30 * 60,  # kill after 30 min idle
+)
+```
+
 ## Sandbox pricing
 
 - Ref: https://modal.com/pricing -> under FAQ: `How are CPU and memory usage metered?`
