@@ -3,6 +3,8 @@
 - Backend
 	- Convex (not-tested)
 - Styling: TailwindCSS with Shadcn
+- Theme:
+  - [Get Design](https://getdesign.md)
 - Styling prompts for AI
 	- [TypeUI](https://www.typeui.sh/)
 	- [MotionSites](https://motionsites.ai/)
