@@ -9,3 +9,13 @@ https://mastra.ai/
 3. In `agent.ts` file, set value of model
    - e.g. `model: 'opencode-go/deepseek-v4.1-flash'`
 4. Setup exa-search as web_search tool?
+
+#### API key names
+
+| provider   | env variable name            |
+| ---------- | ---------------------------- |
+| OpenCode   | OPENCODE_API_KEY             |
+| OpenRouter | OPENROUTER_API_KEY           |
+| OpenAI     | OPENAI_API_KEY               |
+| Anthropic  | ANTHROPIC_API_KEY            |
+| Google     | GOOGLE_GENERATIVE_AI_API_KEY |

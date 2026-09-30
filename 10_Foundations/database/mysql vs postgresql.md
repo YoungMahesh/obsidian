@@ -1,4 +1,3 @@
-
 ## Advantages of postgresql
 
 ### Atomic Database Migrations
@@ -8,3 +7,7 @@ With **Drizzle ORM**, PostgreSQL is safer for migrations because its **Data Defi
 With MySQL, many DDL operations cause implicit commits, so a migration can be **partially applied**, requiring manual reconciliation before retrying.
 
 **For Drizzle ORM migrations specifically: PostgreSQL > MySQL.**
+
+### Array as data type
+
+PostgreSQL has a native ARRAY type (text[], int[], etc.); MySQL does not.
