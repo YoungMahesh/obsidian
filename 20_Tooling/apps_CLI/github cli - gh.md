@@ -1,5 +1,7 @@
 ```bash
+gh repo list
 gh repo create
+gh repo delete OWNER/REPO
 
 # -L == --limit; default limit 30
 gh repo list -L 10
@@ -27,9 +29,10 @@ Credentials management:
 You can give fine grained access to github cli by login through tokens, check [[github#Token Generation]]
 ```bash
 gh auth login
+# add repository deletion scope to `gh`
+gh auth refresh -h github.com -s delete_repo
 gh auth status
 gh auth logout
 ```
 
 Installation: https://cli.github.com/
-
