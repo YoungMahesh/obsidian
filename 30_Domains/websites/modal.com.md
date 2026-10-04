@@ -1,10 +1,14 @@
+[Modal CLI](./modal_cli.md)
+
 ## Sandboxes
 
 Types
+
 - [Standard Sandboxes](https://modal.com/docs/guide/sandboxes): do not support Docker
 - [VM Sandboxes](https://modal.com/docs/guide/vm-sandboxes): support Docker
 
 Addons:
+
 - [Volumes](https://modal.com/docs/guide/volumes): persistant storage for sandbox ($0.09 / GiB / month, first 1 TiB / month free)
 
 ## Sandbox timeouts
