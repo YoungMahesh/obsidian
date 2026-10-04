@@ -1,7 +1,11 @@
 ## Sandboxes
 
+Types
 - [Standard Sandboxes](https://modal.com/docs/guide/sandboxes): do not support Docker
 - [VM Sandboxes](https://modal.com/docs/guide/vm-sandboxes): support Docker
+
+Addons:
+- [Volumes](https://modal.com/docs/guide/volumes): persistant storage for sandbox ($0.09 / GiB / month, first 1 TiB / month free)
 
 ## Sandbox timeouts
 
@@ -91,3 +95,4 @@ Semantics and sources:
 - **Hard memory limit:** none by default, so containers can burst up to the host worker's capacity; a hard limit is applied only via `memory=(request, limit)`. — [Memory limits](https://modal.com/docs/guide/resources#memory-limits)
 - **Ephemeral disk quota:** 512 GiB per container. — [Disk limits](https://modal.com/docs/guide/resources#disk-limits)
 - **VM Sandbox exceptions:** memory provisioning is static — a VM Sandbox gets exactly the RAM requested (default 1 GiB), so a process exceeding it is killed; only CPU bursts. Root images are capped at 512 GiB. — [Resource model](https://modal.com/docs/guide/vm-sandboxes#resource-model), [Limitations](https://modal.com/docs/guide/vm-sandboxes#limitations)
+- **Volume pricing:** $0.09 / GiB / month, with the first 1 TiB / month free. — [Modal Pricing](https://modal.com/pricing)
