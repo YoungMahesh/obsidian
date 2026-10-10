@@ -2,30 +2,22 @@
 
 ```bash
 # install skills
-# - GitHub shorthand (owner/repo)
-npx skills add vercel-labs/agent-skills
-# - Full GitHub URL
 npx skills add https://github.com/mattpocock/skills
-# add skill to antigravity-cli 
-ln -s ~/.agents/skills ~/.gemini/antigravity-cli/skills
-
+# update skill
+npx skills update https://github.com/mattpocock/skills
 # remove skill
 npx skills remove [skills]
-# update skill
-npx skills update [skills]
+
+# -g == global
 # list current project skills
 npx skills ls
-# list global skills
 npx skills ls -g
-# filter skills by specific agent
-npx skills ls -a opencode 
-npx skills ls -a antigravity-cli
-npx skills ls -a zed
-npx skills ls -a claude-code
+# upgrade all skills to latest version
+npx skills@latest update
+npx skills@latest update -g
 # Search by keyword
 npx skills find typescript
 ```
-
 
 ### Matt Pocock skills
 
