@@ -44,6 +44,8 @@ Commands inside TUI:
 /plan # plan mode
 /model # change model or thinking effor
 <esc> # back
+/tasks # view background tasks
+/logout 
 
 # use `!` to run bash commands
 # list files and directories in current directory
@@ -90,4 +92,3 @@ Sandboxing:
 	- Sandbox mode: on
 	- Non-Workspace Access: off
 	- Tool Permission: proceed-in-sandbox
-	
