@@ -1,32 +1,36 @@
 - Frontend+Backend
-	- NextJS: [Vercel](https://vercel.com) or VPS docker container
+  - NextJS: [Vercel](https://vercel.com) or VPS docker container
 - Database
-	- Postgres: [Neon](https://neon.com/pricing) or VPS docker container
+  - Postgres
+    - [Postgres on Neon](https://neon.com/pricing) or VPS docker container
+    - [Postgres on Prisma](https://www.prisma.io/pricing)
+    - Postgres docker container on VPS
+  - MySQL
+    - MySQL docker container on VPS
 - S3 object storage: [Neon](https://neon.com/pricing)
 - Auth
-	- BetterAuth
-	- ClerkAuth
-	- WorkOS
+  - BetterAuth
+  - ClerkAuth
+  - WorkOS
 - Domain setup
-	- If on VPS: [Caddy](https://caddyserver.com/docs/install#docker)
-	- Else: provider will provide dashboard for domain setup
+  - If on VPS: [Caddy](https://caddyserver.com/docs/install#docker)
+  - Else: provider will provide dashboard for domain setup
 - OAuth2.0 testing
-	-  [keycloak](https://www.keycloak.org/getting-started/getting-started-docker) - local
-	- google-auth
+  - [keycloak](https://www.keycloak.org/getting-started/getting-started-docker) - local
+  - google-auth
 - Publish documentation
-	- [docsify](https://docsify.js.org) (not-tested)
+  - [docsify](https://docsify.js.org) (not-tested)
 - Publish API documentation (with OpenAPI spec file support)
-	- [Swagger-ui](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/) 
-	- [Stoplight Elements](https://elements-demo.stoplight.io/)
-	- [Redoc](https://redocly.github.io/redoc)
-		- 'Try it' feature is paid in Replay not available in Redoc Community Edition
+  - [Swagger-ui](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/)
+  - [Stoplight Elements](https://elements-demo.stoplight.io/)
+  - [Redoc](https://redocly.github.io/redoc)
+    - 'Try it' feature is paid in Replay not available in Redoc Community Edition
 - Payments
-	- Web3 Wallet
-	- Stripe; [Stripe-Recommendations](https://github.com/t3dotgg/stripe-recommendations)
+  - Web3 Wallet
+  - Stripe; [Stripe-Recommendations](https://github.com/t3dotgg/stripe-recommendations)
 - Analytics
-	- [posthog](https://posthog.com/) (not-tested)
+  - [posthog](https://posthog.com/) (not-tested)
 - Virtual Office: [Gather Town](https://gather.town/)
 - EVM blockchains
-	- Sei Testnet - [Explorer](https://testnet.seiscan.io)  [Faucet](https://docs.sei.io/learn/faucet)
-	- Sonic Testnet - [Explorer](https://testnet.sonicscan.org)  [Faucet](https://testnet.soniclabs.com/account)
-	
+  - Sei Testnet - [Explorer](https://testnet.seiscan.io) [Faucet](https://docs.sei.io/learn/faucet)
+  - Sonic Testnet - [Explorer](https://testnet.sonicscan.org) [Faucet](https://testnet.soniclabs.com/account)
