@@ -86,9 +86,12 @@ Enable vim:
 	- Editor mode: vim
 	- Editor mode > insert first: on
 
-
 Sandboxing:
 - `/config`
 	- Sandbox mode: on
 	- Non-Workspace Access: off
 	- Tool Permission: proceed-in-sandbox
+
+Telemetry (off by default):
+- `config`
+  - Enable Telemetry: off
