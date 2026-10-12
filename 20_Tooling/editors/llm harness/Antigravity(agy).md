@@ -93,5 +93,7 @@ Sandboxing:
 	- Tool Permission: proceed-in-sandbox
 
 Telemetry (off by default):
+- When toggled on, Antigravity CLI collects usage data to help Google enhance performance and
+  features
 - `config`
   - Enable Telemetry: off
