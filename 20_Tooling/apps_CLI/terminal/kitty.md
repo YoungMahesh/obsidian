@@ -1,3 +1,6 @@
+### kill kitty tab
+- Execute: `ctrl-shift-q` to close active tab
+
 ### kitty on remote server
 
 1. `Error opening terminal: xterm-kitty` during execution of `htop`
