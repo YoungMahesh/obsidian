@@ -2,6 +2,7 @@ Run on remote server:
 ```bash
 npx t3@latest service install
 npx t3@latest service status
+# tokens of t3code are one-time-use only, to generate new use token to connect other device use: `t3 pair`
 npx t3@latest pair
 npx t3@latest service update
 npx t3@latest service uninstall

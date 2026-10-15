@@ -11,7 +11,11 @@ git worktree add ../app_feature1
 cd ../app_feature1
 npm install
 
-# after merging, remove worktree and branch
+# 1. directly push changes to another branch (e.g. main), in case there are no new changes on main
+git push origin HEAD:main
+
+# 2. merge and then remove worktree and branch
+# <execute commands related to merging first>
 git worktree remove ../app-feature-x
 git branch -d feature-x
 ```
@@ -41,4 +45,3 @@ git checkout main
 - Compare UI across branches instantly
 - No branch switching
 - multiple AI agents will work multiple tasks at the same time
-    
