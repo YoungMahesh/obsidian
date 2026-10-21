@@ -49,3 +49,12 @@ if (task is small enough that ai agent can complete in one go) {
 	you can also use `/implement <number of ticket you want to implement>`
 }
 ```
+
+### modal.com skills
+
+- https://modal.com/docs/cli/latest/skills
+
+```bash
+modal skills install
+modal skills update
+```
