@@ -110,3 +110,11 @@ Add or update `.vscode/settings.json` to prevent watching generated and dependen
 ```sh
 sysctl -w fs.inotify.max_user_watches=524288
 ```
+
+#### Verify if problem is fixed:
+
+Check maximum watches allowed, in use watches and available watches.
+
+```sh
+bash -c 'max=$(cat /proc/sys/fs/inotify/max_user_watches); used=$(grep -h "inotify wd" /proc/*/fdinfo/* 2>/dev/null | wc -l); echo "Max: $max | In Use: $used | Available: $((max - used))"'
+```
