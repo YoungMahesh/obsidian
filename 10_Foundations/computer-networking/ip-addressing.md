@@ -1,3 +1,14 @@
+```bash
+# get IPv4 address of your computer; `&& echo` to put newline after output
+curl ifconfig.me -4 && echo
+
+# get IPv6 address of your computer
+curl ifconfig.me -6 && echo
+```
+
+You can also visit https://api.ipify.org to check your ip-address
+
+---
 
 Three concepts are important:
 
@@ -150,12 +161,3 @@ VPN networking (If you are running vpn inside a docker container)
 
 
 
-```bash
-# get IPv4 address of your computer; `&& echo` to put newline after output
-curl ifconfig.me -4 && echo
-
-# get IPv6 address of your computer
-curl ifconfig.me -6 && echo
-```
-
-You can also visit https://api.ipify.org to check your ip-address
