@@ -1,10 +1,12 @@
 [Supported Agents](https://github.com/vercel-labs/skills#supported-agents)
 
 ```bash
-# install skills
+# install/update mattpocock/skills
 npx skills add https://github.com/mattpocock/skills
-# update skill
-npx skills update https://github.com/mattpocock/skills
+
+# update existing skills
+npx skills update
+
 # remove skill
 npx skills remove [skills]
 
