@@ -8,6 +8,7 @@
   - free $200 free trial - no credit card required
 - [e2b](https://e2b.dev/pricing)
   - free $100 one-time usage credit with No credit card required
+- [Upstash box](https://upstash.com/docs/box/overall/quickstart)
 
 ### setup
 
