@@ -23,6 +23,10 @@
 - Testing
 	- [Vitest](https://vitest.dev/) - Unit and Integration testing
 	- Playwright - End to End Testing
+	- [Stagehand](https://stagehand.dev)
+	  - works with playwright + LLM
+		- faster end to end testing with palywright
+  	- supports caching to re-execute testing without LLM usage
 	- API Testing
 		- Local NodeJS scripts using `fetch()` API
 	- OAuth2.0 testing
