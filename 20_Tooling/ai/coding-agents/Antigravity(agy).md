@@ -1,3 +1,8 @@
+---
+aliases:
+  - Antigravity
+---
+
 ## Antigravity IDE
 
 Installation:
